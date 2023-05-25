@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Globe from '../components/home/Globe'
+import Quotation from '../components/quote/Quotation'
 import Overlay_1 from '../components/layout/Overlay_1'
 
-export default function Home() {
+export default function Faq() {
     return (
         <>
             <Head>
@@ -16,10 +16,9 @@ export default function Home() {
                 <Overlay_1 />
 
                 <section>
-                    <Globe />
-                    <h4>Innovative 3D Web Development Tailored to Your Business Needs</h4>
-                    <p>As a skilled web developer, I specialize in creating bespoke websites enhanced with 3D elements, making your online presence truly unique.</p>
-                    <button className='button'>Experience the Difference with 3D Web Development</button>
+                    <Quotation />
+                    <h4>Get a Quote</h4>
+                    <p>Feel free to add as much information as possible. The more you tell me, the more accurate I can be with your quote.</p>
                 </section>
             </main>
         </>

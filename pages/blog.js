@@ -13,8 +13,17 @@ export default function Blog() {
             </Head>
 
             <main>
-                <Book />
                 <Overlay_2 />
+
+                <section>
+                    <Book />
+                    <h4>Post 1</h4>
+                    <p>The Impact of 3D Elements on Your Website's User Experience</p>
+                    <h4>Post 2</h4>
+                    <p>Why Your Business Website Needs 3D Elements</p>
+                    <h4>Post 3</h4>
+                    <p>Case Study: Revitalizing a Website with 3D Elements</p>
+                </section>
             </main>
         </>
     )

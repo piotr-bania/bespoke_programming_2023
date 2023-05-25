@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Carousel from '../components/work/Carousel'
+import Questions from '../components/faq/Questions'
 import Overlay_4 from '../components/layout/Overlay_4'
 
-export default function Process() {
+export default function Faq() {
     return (
         <>
             <Head>
@@ -16,11 +16,9 @@ export default function Process() {
                 <Overlay_4 />
 
                 <section>
-                    <Carousel />
-                    <h4>Project 1</h4>
-                    <p>Website redesign for a Tanzanian hedge fund, where I utilized CSS, Sass, React, Next, GLSL, Three.js, and React Three Fiber to create a captivating 3D experience.</p>
-                    <h4>Project 2</h4>
-                    <p>For my personal portfolio website, I showcased my skills in HTML, CSS, Sass, and the integration of 3D elements.</p>
+                    <Questions />
+                    <h4>FAQ</h4>
+                    <p>Answers to your questions.</p>
                 </section>
             </main>
         </>

@@ -1,0 +1,14 @@
+@import '/styles/globals';
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    z-index: 100;
+
+    li {
+        a {
+            padding: 20px;
+        }
+    }
+}
