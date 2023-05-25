@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Hero from '../components/home/Globe'
+import Logo from '../components/about/Logo'
 import Overlay_1 from '../components/layout/Overlay_1'
 
-export default function Home() {
+export default function About() {
     return (
         <>
             <Head>
@@ -13,7 +13,7 @@ export default function Home() {
             </Head>
 
             <main>
-                <Hero />
+                <Logo />
                 <Overlay_1 />
             </main>
         </>

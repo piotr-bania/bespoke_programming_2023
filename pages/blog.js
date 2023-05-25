@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Hero from '../components/home/Globe'
-import Overlay_1 from '../components/layout/Overlay_1'
+import Book from '../components/blog/Book'
+import Overlay_2 from '../components/layout/Overlay_2'
 
-export default function Home() {
+export default function Blog() {
     return (
         <>
             <Head>
@@ -13,8 +13,8 @@ export default function Home() {
             </Head>
 
             <main>
-                <Hero />
-                <Overlay_1 />
+                <Book />
+                <Overlay_2 />
             </main>
         </>
     )

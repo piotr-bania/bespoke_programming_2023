@@ -1,8 +1,10 @@
 import Head from 'next/head'
-import Hero from '../components/home/Globe'
-import Overlay_1 from '../components/layout/Overlay_1'
+import Monitor from '../components/services/Monitor'
+import SinglePageApp from '../components/services/SinglePageApp'
+import BespokeWebsite from '../components/services/BespokeWebsite'
+import Overlay_2 from '../components/layout/Overlay_2'
 
-export default function Home() {
+export default function Services() {
     return (
         <>
             <Head>
@@ -13,8 +15,10 @@ export default function Home() {
             </Head>
 
             <main>
-                <Hero />
-                <Overlay_1 />
+                <Monitor />
+                <SinglePageApp />
+                <BespokeWebsite />
+                <Overlay_2 />
             </main>
         </>
     )

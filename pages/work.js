@@ -1,8 +1,8 @@
 import Head from 'next/head'
-import Hero from '../components/home/Globe'
-import Overlay_1 from '../components/layout/Overlay_1'
+import Carousel from '../components/work/Carousel'
+import Overlay_4 from '../components/layout/Overlay_4'
 
-export default function Home() {
+export default function Process() {
     return (
         <>
             <Head>
@@ -13,8 +13,8 @@ export default function Home() {
             </Head>
 
             <main>
-                <Hero />
-                <Overlay_1 />
+                <Carousel />
+                <Overlay_4 />
             </main>
         </>
     )

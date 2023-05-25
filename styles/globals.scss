@@ -1,0 +1,188 @@
+/* ------------------------------ Fonts ------------------------------ */
+@font-face {
+  font-family: "AlbraLight";
+  src: url(../public/fonts/Albra/AlbraLight.otf);
+}
+
+@font-face {
+  font-family: "AlbraRegular";
+  src: url(../public/fonts/Albra/AlbraRegular.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeueRegular";
+  src: url(../public/fonts/HelveticaNeue/HelveticaNeueRegular.otf);
+}
+
+/* ------------------------------ Variables ------------------------------ */
+$indigo: #6526D1;
+$magenta: #D02670;
+$background: #1A1A1A;
+$background_faded: rgba(26, 26, 26, 0.25);
+$dark_grey: #7A7A7A;
+$light_grey: #D0D0D0;
+$white: #F6F6F6;
+$gradient_indigo: linear-gradient(90deg, $indigo 0%, $magenta 100%);
+$gradient_indigo_faded: linear-gradient(90deg, rgba(rgba(101, 38, 209, 1), 0.95) 0%, rgba(208, 38, 112, 0.75) 100%);
+$gradient_background: linear-gradient(90deg, rgba(122, 122, 122, 0.75) 0%, rgba(122, 122, 122, 0) 80%);
+$gradient_background_faded: linear-gradient(90deg, rgba(122, 122, 122, 0.5) 0%, rgba(122, 122, 122, 0) 80%);
+$gradient_overlay: linear-gradient(0deg, rgba(122, 122, 122, 0) 0%, rgba(122, 122, 122, 0.5) 100%);
+
+// ---------- Fonts ----------
+$header_font: 'AlbraLight',
+sans-serif;
+$text_font: 'HelveticaNeueRegular',
+sans-serif;
+
+// ---------- Fluid fonts ----------
+$paragraph: clamp(1.13rem, 0.23vw + 1.07rem, 1.25rem);
+$header_4: clamp(1.41rem, 1.12vw + 1.13rem, 2.02rem);
+$header_3: clamp(1.76rem, 2.75vw + 1.07rem, 3.27rem);
+$header_2: clamp(2.2rem, 5.63vw + 0.79rem, 5.29rem);
+$header_1: clamp(2.75rem, 10.58vw + 0.1rem, 8.57rem);
+
+// Basiscs
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+
+body {
+  background: $background;
+  color: $light_grey;
+  font-family: $text_font;
+  font-size: $paragraph;
+  margin: auto;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+/* ------------------------------ Fonts ------------------------------ */
+
+h1,
+h2,
+h3,
+h4 {
+  color: $white;
+  font-family: $header_font;
+  margin: 0;
+  line-height: 1;
+}
+
+h1 {
+  font-size: $header_1;
+}
+
+h2 {
+  font-size: $header_2;
+}
+
+h3 {
+  font-size: $header_3;
+}
+
+h4 {
+  font-size: $header_4;
+}
+
+p {
+  font-family: $text_font;
+  font-size: $paragraph;
+  color: $light_grey;
+  margin: 0;
+  line-height: 1;
+}
+
+a {
+  font-family: $paragraph;
+  text-transform: uppercase;
+  color: $light_grey;
+  opacity: 0.75;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: $light_grey;
+    opacity: 1;
+  }
+
+  &:focus {
+    color: $white;
+    opacity: 1;
+  }
+}
+
+.link {
+  text-decoration: underline $dark_grey 2px;
+  color: $white;
+  opacity: 1;
+
+  &:hover {
+    text-decoration: underline $indigo 2px;
+  }
+}
+
+.indigo {
+  color: $indigo;
+}
+
+.magenta {
+  color: $magenta;
+}
+
+/* ------------------------------ Buttons ------------------------------ */
+.button {
+  background: $gradient_indigo_faded;
+  color: $white;
+  font-family: inherit;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  line-height: 0.55;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: $gradient_indigo;
+  }
+}
+
+/* ------------------------------ Sections ------------------------------ */
+section {
+  width: 100%;
+
+  .wrapper {
+    border: 1px dotted rgba(0, 255, 255, 0.005);
+  }
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    margin: 5vh 5vw;
+  }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768) and (max-width: 1023px) {
+  .wrapper {
+    margin: 4vh 5vw;
+  }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+  .wrapper {
+    margin: 3vh 5vw;
+  }
+}

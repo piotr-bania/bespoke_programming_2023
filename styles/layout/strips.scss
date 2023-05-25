@@ -1,0 +1,54 @@
+@import '/styles/globals';
+
+// ------------------------------ Strips ------------------------------
+.strip {
+    position: fixed;
+    width: 1px;
+    height: 100vh;
+    background: linear-gradient(180deg, $white 0%, $background 100%);
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.one, .two, .three {
+    top: 0;
+}
+
+.one {
+    left: 27.5%;
+}
+
+.two {
+    left: 50%;
+}
+
+.three {
+    right: 27.5%;
+}
+
+// ------------------------------ Overlay ------------------------------
+.overlay_1, .overlay_2, .overlay_3, .overlay_4 {
+    background: $gradient_overlay;
+    position: fixed;
+    height: 100vh;
+    width: 22.5%;
+    top: 0;
+    opacity: 0.25;
+    z-index: -1;
+}
+
+.overlay_1 {
+    left: 5%;
+}
+
+.overlay_2 {
+    left: 27.5%;
+}
+
+.overlay_3 {
+    left: 50%;
+}
+
+.overlay_4 {
+    left: 72.5%;
+}
