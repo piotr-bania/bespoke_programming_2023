@@ -7,8 +7,26 @@ nav {
     z-index: 100;
 
     li {
+        display: flex;
+
         a {
             padding: 20px;
+            display: flex;
+        }
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    nav {
+        flex-direction: column;
+
+        li {
+            flex-direction: column;
+
+            a {
+                padding: 5px;
+            }
         }
     }
 }
