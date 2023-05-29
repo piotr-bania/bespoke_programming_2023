@@ -17,7 +17,7 @@ export default function Home() {
 
                 <section>
                     <Globe />
-                    <h4>Innovative 3D Web Development Tailored to Your Business Needs</h4>
+                    <h1>Innovative 3D Web Development Tailored to Your Business Needs</h1>
                     <p>As a skilled web developer, I specialize in creating bespoke websites enhanced with 3D elements, making your online presence truly unique.</p>
                     <button className='button'>Experience the Difference with 3D Web Development</button>
                 </section>

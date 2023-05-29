@@ -71,6 +71,7 @@ h3,
 h4 {
   color: $white;
   font-family: $header_font;
+  font-weight: 100;
   margin: 20px auto;
   line-height: 1;
 }
@@ -160,7 +161,6 @@ a {
 
 /* ------------------------------ Sections ------------------------------ */
 section {
-  width: 100%;
   margin: 20px;
 
   .wrapper {
