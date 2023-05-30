@@ -160,31 +160,43 @@ a {
 }
 
 /* ------------------------------ Sections ------------------------------ */
-section {
-  margin: 20px;
-
-  .wrapper {
-    border: 1px dotted rgba(0, 255, 255, 0.005);
+main {
+  section {
+    display: grid;
+    gap: 12px;
+    margin-top: 10%;
   }
 }
 
 /* ------------------------------ Desktop ------------------------------ */
 @media screen and (min-width: 1024px) {
-  section {
-    margin: 5%;
+  main {
+    margin: 20px 60px;
+
+    section {
+      grid-template-columns: repeat(12, 1fr);
+    }
   }
 }
 
 /* ------------------------------ Tablet ------------------------------ */
-@media screen and (min-width: 768) and (max-width: 1023px) {
-  section {
-    margin: 4%;
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  main {
+    margin: 15px 40px;
+
+    section {
+      grid-template-columns: repeat(8, 1fr);
+    }
   }
 }
 
 /* ------------------------------ Smartphone ------------------------------ */
 @media screen and (max-width: 767px) {
-  section {
-    margin: 3%;
+  main {
+    margin: 10px 20px;
+
+    section {
+      grid-template-columns: repeat(6, 1fr);
+    }
   }
 }

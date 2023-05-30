@@ -6,10 +6,11 @@ import Experience from '../home/Experience'
 const Navbar = () => {
     return (
         <nav>
-            <Experience />
+            <Link href="/">
+                <Experience />
+            </Link>
 
             <li>
-                <Link href="/">Home</Link>
                 <Link href="/services">Services</Link>
                 <Link href="/process">Process</Link>
                 <Link href="/work">Work</Link>

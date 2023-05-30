@@ -1,6 +1,8 @@
 @import '/styles/globals';
 
 nav {
+    position: fixed;
+    top: 0;
     display: flex;
     gap: 20px;
     align-items: center;
