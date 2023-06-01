@@ -6,6 +6,7 @@ const Strips = () => {
             <div className="strip one"></div>
             <div className="strip two"></div>
             <div className="strip three"></div>
+            <div className="strip four"></div>
         </div>
     )
 }

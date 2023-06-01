@@ -15,11 +15,13 @@ export default function Home() {
             <main>
                 <Overlay_1 />
 
-                <section>
+                <section id='hero'>
                     <Globe />
-                    <h1>Innovative 3D Web Development Tailored to Your Business Needs</h1>
-                    <p>As a skilled web developer, I specialize in creating bespoke websites enhanced with 3D elements, making your online presence truly unique.</p>
-                    <button className='button'>Experience the Difference with 3D Web Development</button>
+                    <div className='heading'>
+                        <h1>Innovative 3D Web Development Tailored to Your Business Needs</h1>
+                        <p>As a skilled web developer, I specialize in creating bespoke websites enhanced with 3D elements, making your online presence truly unique.</p>
+                        <button className='button'>Experience the Difference with 3D Web Development</button>
+                    </div>
                 </section>
             </main>
         </>

@@ -2,6 +2,7 @@ import '../styles/globals.scss'
 import '../styles/layout/navbar.scss'
 import '../styles/layout/footer.scss'
 import '../styles/layout/strips.scss'
+import '../styles/pages/home.scss'
 
 // Layouts
 import Layout from '../components/layout/Layout.js'

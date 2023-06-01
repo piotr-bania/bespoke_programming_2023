@@ -10,7 +10,7 @@
     z-index: -1;
 }
 
-.one, .two, .three {
+.one, .two, .three, .four {
     top: 0;
 }
 
@@ -24,6 +24,10 @@
 
 .three {
     right: 27.5%;
+}
+
+.four {
+    right: 5%;
 }
 
 // ------------------------------ Overlay ------------------------------

@@ -35,11 +35,11 @@ $text_font: 'HelveticaNeueRegular',
 sans-serif;
 
 // ---------- Fluid fonts ----------
-$paragraph: clamp(1.13rem, 0.23vw + 1.07rem, 1.25rem);
-$header_4: clamp(1.41rem, 1.12vw + 1.13rem, 2.02rem);
-$header_3: clamp(1.76rem, 2.75vw + 1.07rem, 3.27rem);
-$header_2: clamp(2.2rem, 5.63vw + 0.79rem, 5.29rem);
-$header_1: clamp(2.75rem, 10.58vw + 0.1rem, 8.57rem);
+$paragraph: clamp(0.88rem, 0.45vw + 0.76rem, 1.13rem);
+$header_4: clamp(1.09rem, 1.32vw + 0.76rem, 1.82rem);
+$header_3: clamp(1.37rem, 2.87vw + 0.65rem, 2.95rem);
+$header_2: clamp(1.71rem, 5.56vw + 0.32rem, 4.77rem);
+$header_1: clamp(2.14rem, 10.13vw + -0.4rem, 7.71rem);
 
 // Basiscs
 * {
@@ -103,14 +103,12 @@ p {
 a {
   font-family: $paragraph;
   text-transform: uppercase;
-  color: $light_grey;
-  opacity: 0.75;
+  color: $dark_grey;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 
   &:hover {
     color: $light_grey;
-    opacity: 1;
   }
 
   &:focus {
@@ -160,43 +158,30 @@ a {
 }
 
 /* ------------------------------ Sections ------------------------------ */
-main {
-  section {
-    display: grid;
-    gap: 12px;
-    margin-top: 10%;
-  }
+section {
+  display: grid;
+  gap: 12px;
+  margin: 5%;
+  // border: 1px dotted turquoise;
 }
 
 /* ------------------------------ Desktop ------------------------------ */
 @media screen and (min-width: 1024px) {
-  main {
-    margin: 20px 60px;
-
-    section {
-      grid-template-columns: repeat(12, 1fr);
-    }
+  section {
+    grid-template-columns: repeat(12, 1fr);
   }
 }
 
 /* ------------------------------ Tablet ------------------------------ */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  main {
-    margin: 15px 40px;
-
-    section {
-      grid-template-columns: repeat(8, 1fr);
-    }
+  section {
+    grid-template-columns: repeat(8, 1fr);
   }
 }
 
 /* ------------------------------ Smartphone ------------------------------ */
 @media screen and (max-width: 767px) {
-  main {
-    margin: 10px 20px;
-
-    section {
-      grid-template-columns: repeat(6, 1fr);
-    }
+  section {
+    grid-template-columns: repeat(6, 1fr);
   }
 }

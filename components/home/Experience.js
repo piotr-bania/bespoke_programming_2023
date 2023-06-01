@@ -14,9 +14,9 @@ const Experience = () => {
                 >
                 <Canvas className='canvas' shadows>
                     <Suspense fallback={null}>
-                        <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+                        <PerspectiveCamera makeDefault position={[0, 0, 2]} />
                         <ambientLight />
-                        <Environment preset='city' />
+                        <Environment preset='sunset' />
                         <Logo />
                     </Suspense>
                 </Canvas>
