@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Globe from '../components/home/Globe'
+import Dna from '../components/home/Dna'
 import Overlay_1 from '../components/layout/Overlay_1'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
                 <Overlay_1 />
 
                 <section id='hero'>
-                    <Globe />
+                    {/* <Dna /> */}
                     <div className='heading'>
                         <h1>Innovative 3D Web Development Tailored to Your Business Needs</h1>
                         <p>As a skilled web developer, I specialize in creating bespoke websites enhanced with 3D elements, making your online presence truly unique.</p>

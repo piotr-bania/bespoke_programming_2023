@@ -8,6 +8,13 @@
     }
 }
 
+.canvas_hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 /* ------------------------------ Desktop ------------------------------ */
 @media screen and (min-width: 1024px) {
     #hero {
@@ -29,6 +36,7 @@
 /* ------------------------------ Smartphone ------------------------------ */
 @media screen and (max-width: 767px) {
     #hero {
+        padding-top: 25%;
         .heading {
             grid-area: 1 / 1 / 2 / 7;
         }

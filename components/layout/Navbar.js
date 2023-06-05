@@ -1,13 +1,12 @@
 import React from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
-import Experience from '../home/Experience'
+import LogoCanvas from '../navbar/LogoCanvas'
 
 const Navbar = () => {
     return (
         <nav>
             <Link href="/">
-                <Experience />
+                <LogoCanvas />
             </Link>
 
             <li>
