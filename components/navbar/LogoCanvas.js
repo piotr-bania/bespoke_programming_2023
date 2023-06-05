@@ -16,7 +16,7 @@ const LogoCanvas = () => {
                     <Suspense fallback={null}>
                         <PerspectiveCamera makeDefault position={[0, 0, 2]} />
                         <ambientLight />
-                        {/* <Environment preset='sunset' /> */}
+                        <Environment files='./environment/photo_studio_loft_hall_1k.hdr' />
                         <Logo />
                     </Suspense>
                 </Canvas>
