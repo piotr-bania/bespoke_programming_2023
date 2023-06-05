@@ -16,7 +16,7 @@ const LogoCanvas = () => {
                     <Suspense fallback={null}>
                         <PerspectiveCamera makeDefault position={[0, 0, 2]} />
                         <ambientLight />
-                        <Environment preset='sunset' />
+                        {/* <Environment preset='sunset' /> */}
                         <Logo />
                     </Suspense>
                 </Canvas>

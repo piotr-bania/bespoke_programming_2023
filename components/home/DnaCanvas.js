@@ -17,7 +17,6 @@ const DnaCanvas = () => {
                     <Suspense fallback={null}>
                         <PerspectiveCamera makeDefault position={[0, 0, 5]} />
                         <ambientLight />
-                        <Environment preset='sunset' />
                         <Dna />
                     </Suspense>
                 </Canvas>
