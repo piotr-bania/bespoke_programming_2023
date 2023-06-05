@@ -22,7 +22,7 @@ export default function Faq() {
                         <h4>You're not alone.</h4>
                         <p>Here are some of the most common questions I receive about my services and 3D web development. If you can't find the answer you're looking for, feel free to reach out directly.</p>
 
-                        <h4 className='magenta'>Why should I choose a 3D website?</h4>
+                        <h4>Why should I choose a 3D website?</h4>
                         <p>A 3D website can provide an engaging and interactive experience for your users. It adds depth to your website's design, making it more memorable and impactful. 3D elements can be used to tell a story, showcase a product, or provide a unique navigation experience.</p>
                     </div>
                 </section>

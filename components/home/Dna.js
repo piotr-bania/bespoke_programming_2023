@@ -1,19 +1,30 @@
-import React, { useRef } from 'react'
+import React, { useState, useRef, useMemo, useEffect } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { useLoader, useFrame } from '@react-three/fiber'
-import { Float, useAnimations } from '@react-three/drei'
+import { useAnimations } from '@react-three/drei'
+import { useLoader, useFrame, useThree } from '@react-three/fiber'
 
 const Dna = () => {
 
     const groupRef = useRef()
-    // const {scene, nodes} = useLoader(GLTFLoader, '/models/dna.glb')
+
+    const {scene, nodes, animations} = useLoader(GLTFLoader, '/models/untitled.glb')
+    const {actions} = useAnimations(animations, nodes.model)
+
+    useFrame((state, delta) => {
+        groupRef.current.rotation.y -= 0.0005
+    })
+
+    // useEffect(() => {
+    //     actions.model.play()
+    // }, [actions])
 
     return (
-        <group ref={groupRef} scale={1} >
-            <mesh>
-                {/* <primitive object={scene} /> */}
-                <boxGeometry />
-                <meshBasicMaterial />
+        <group ref={groupRef} position={[0, 0, 1]} scale={1} >
+            <mesh
+                // geometry={nodes.model.geometry}
+                // material={nodes.model.material}
+                >
+                <primitive object={scene} dispose={null}/>
             </mesh>
         </group>
     )

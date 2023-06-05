@@ -9,19 +9,21 @@ const Navbar = () => {
                 <LogoCanvas />
             </Link>
 
-            <li>
-                <Link href="/services">Services</Link>
-                <Link href="/process">Process</Link>
-                <Link href="/work">Work</Link>
-                <Link href="/about">About</Link>
-                <Link href="/blog">Blog</Link>
-                <Link href="/contact">Contact</Link>
-                <Link href="/faq">FAQ</Link>
-            </li>
-            
-            <Link href="/quote">
-                <button className='button'>Quote</button>
-            </Link>
+            <div>
+                <li>
+                    <Link className='link' href="/services">Services</Link>
+                    <Link className='link' href="/process">Process</Link>
+                    <Link className='link' href="/work">Work</Link>
+                    <Link className='link' href="/about">About</Link>
+                    <Link className='link' href="/blog">Blog</Link>
+                    <Link className='link' href="/contact">Contact</Link>
+                    <Link className='link' href="/faq">FAQ</Link>
+                </li>
+                
+                <Link href="/quote">
+                    <button className='button'>Quote</button>
+                </Link>
+            </div>
         </nav>
     )
 }
