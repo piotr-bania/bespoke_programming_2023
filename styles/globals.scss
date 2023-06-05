@@ -14,6 +14,16 @@
   src: url(../public/fonts/HelveticaNeue/HelveticaNeueRegular.otf);
 }
 
+@font-face {
+  font-family: "PlayfairDisplayBlack";
+  src: url(../public/fonts/Playfair_Display/PlayfairDisplay-Black.ttf);
+}
+
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(../public/fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+}
+
 /* ------------------------------ Variables ------------------------------ */
 $indigo: #6526D1;
 $magenta: #D02670;
@@ -21,7 +31,7 @@ $background: #070707;
 $background_faded: rgba(26, 26, 26, 0.25);
 $dark_grey: #7A7A7A;
 $light_grey: #D0D0D0;
-$white: #F6F6F6;
+$white: #FFFFFF;
 $gradient_indigo: linear-gradient(90deg, $indigo 0%, $magenta 100%);
 $gradient_indigo_faded: linear-gradient(90deg, rgba(rgba(101, 38, 209, 1), 0.95) 0%, rgba(208, 38, 112, 0.75) 100%);
 $gradient_background: linear-gradient(90deg, rgba(122, 122, 122, 0.75) 0%, rgba(122, 122, 122, 0) 80%);
@@ -29,9 +39,9 @@ $gradient_background_faded: linear-gradient(90deg, rgba(122, 122, 122, 0.5) 0%, 
 $gradient_overlay: linear-gradient(0deg, rgba(122, 122, 122, 0) 0%, rgba(122, 122, 122, 0.5) 100%);
 
 // ---------- Fonts ----------
-$header_font: 'AlbraLight',
+$header_font: 'PlayfairDisplayBlack',
 sans-serif;
-$text_font: 'HelveticaNeueRegular',
+$text_font: 'PlayfairDisplay',
 sans-serif;
 
 // ---------- Fluid fonts ----------
@@ -71,7 +81,6 @@ h3,
 h4 {
   color: $white;
   font-family: $header_font;
-  font-weight: 100;
   margin: 20px auto;
   line-height: 1;
 }
@@ -97,7 +106,6 @@ p {
   font-size: $paragraph;
   color: $light_grey;
   margin: 0;
-  line-height: 1;
 }
 
 a {

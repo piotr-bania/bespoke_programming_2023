@@ -18,28 +18,30 @@ export default function Process() {
             <main>
                 <Overlay_3 />
 
-                <section>
-                    <GearAndPen />
-                    <h4>Information Gathering & Planning</h4>
-                    <p>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
-                </section>
+                <section id='process'>
+                    <div>
+                        <GearAndPen />
+                        <h4>Information Gathering & Planning</h4>
+                        <p>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
+                    </div>
 
-                <section>
-                    <ConstructionSite />
-                    <h4>Build</h4>
-                    <p>I design and develop your website, employing the latest 3D technologies for a truly engaging user experience.</p>
-                </section>
+                    <div>
+                        <ConstructionSite />
+                        <h4>Build</h4>
+                        <p>I design and develop your website, employing the latest 3D technologies for a truly engaging user experience.</p>
+                    </div>
 
-                <section>
-                    <MagnifyingGlass />
-                    <h4>Testing</h4>
-                    <p>I rigorously test all aspects of your website, ensuring optimal performance and seamless user interaction with 3D elements.</p>
-                </section>
+                    <div>
+                        <MagnifyingGlass />
+                        <h4>Testing</h4>
+                        <p>I rigorously test all aspects of your website, ensuring optimal performance and seamless user interaction with 3D elements.</p>
+                    </div>
 
-                <section>
-                    <Rocket />
-                    <h4>Launch & Maintenance</h4>
-                    <p>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
+                    <div>
+                        <Rocket />
+                        <h4>Launch & Maintenance</h4>
+                        <p>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
+                    </div>
                 </section>
             </main>
         </>

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Logo from '../components/about/Logo'
 import Overlay_1 from '../components/layout/Overlay_1'
 
 export default function About() {
