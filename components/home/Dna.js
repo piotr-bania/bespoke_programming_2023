@@ -7,19 +7,15 @@ const Dna = () => {
 
     const groupRef = useRef()
 
-    const {scene, nodes, animations} = useLoader(GLTFLoader, '/models/untitled.glb')
-    const {actions} = useAnimations(animations, nodes.model)
+    const {scene, nodes, animations} = useLoader(GLTFLoader, '/models/dna_2.glb')
 
     useFrame((state, delta) => {
+        // waterMaterial.uniforms.uTime.value += delta
         groupRef.current.rotation.y -= 0.0005
     })
 
-    // useEffect(() => {
-    //     actions.model.play()
-    // }, [actions])
-
     return (
-        <group ref={groupRef} position={[0, 0, 1]} scale={1} >
+        <group ref={groupRef} position={[0, -2, 1]} scale={1} >
             <mesh
                 // geometry={nodes.model.geometry}
                 // material={nodes.model.material}
