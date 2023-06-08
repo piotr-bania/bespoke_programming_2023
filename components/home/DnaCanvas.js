@@ -1,8 +1,9 @@
 import React, { Suspense, useEffect, useRef } from 'react'
 import { AnimatePresence, motion as m } from 'framer-motion'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { PerspectiveCamera, Environment, Html, OrbitControls } from '@react-three/drei'
+import { PerspectiveCamera, Environment } from '@react-three/drei'
 import Dna from './Dna'
+import Controls from '../controls/Controls'
 
 const CameraController = () => {
     const { camera } = useThree()
@@ -42,12 +43,12 @@ const DnaCanvas = () => {
                 >
                 <Canvas className='canvas' shadows>
                     <Suspense fallback={null}>
-                            <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-                            <ambientLight intensity={0.05} color={'#FFFFFF'} />
-                            <Environment files='./environment/dikhololo_night_1k.hdr' />
-                            <pointLight color={'#FFFFFF'} intensity={1} />
+                            <PerspectiveCamera makeDefault position={[0, 0, 25]} />
+                            {/* <ambientLight intensity={0.1} color={'#ffffff'} /> */}
+                            <Environment files='./environment/brown_photostudio_01_1k.hdr' />
+                            {/* <pointLight color={'#FFFFFF'} position={[0, 1, 0]} intensity={0.95} /> */}
                             <Dna />
-                            <CameraController />
+                            <Controls />
                     </Suspense>
                 </Canvas>
             </m.div>

@@ -16,7 +16,7 @@ export default function Home() {
                 <Overlay_1 />
                 <DnaCanvas />
 
-                <section id='hero'>
+                {/* <section id='hero'>
                     <div className='heading'>
                         <h1>Innovative 3D Web Development Tailored to Your Business Needs</h1>
                     </div>
@@ -43,7 +43,7 @@ export default function Home() {
 
                 <section className='quote'>
                     <h2>Ready to elevate your online presence? Let's talk about your project.</h2>
-                </section>
+                </section> */}
             </main>
         </>
     )
