@@ -6,7 +6,7 @@ import { Float, useAnimations } from '@react-three/drei'
 const Logo = () => {
 
     const groupRef = useRef()
-    const {scene, nodes} = useLoader(GLTFLoader, '/models/logo_2.glb')
+    const {scene, nodes} = useLoader(GLTFLoader, '/models/logo.glb')
 
     useFrame(() => {
         groupRef.current.rotation.y -= 0.005
