@@ -20,7 +20,7 @@ const Controls = () => {
             rotateSpeed={0.25}
             enablePan={false}
             minPolarAngle={Math.PI / 20}
-            maxPolarAngle={Math.PI / 2.5}
+            maxPolarAngle={Math.PI / 2.05}
             minAzimuthAngle={-Math.PI / 6.5}
             maxAzimuthAngle={Math.PI / 2.5}
             minDistance={2}
