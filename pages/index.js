@@ -40,9 +40,6 @@ export default function Home() {
                     <div className='heading'>
                         <h3>Services</h3>
                         <p>From custom landing pages to complex 3D animations, I offer a variety of web development services to meet your needs.</p>
-                        <Link className='link' href="/services">
-                            <button className='button'>More Details and Pricing</button>
-                        </Link>
                     </div>
 
                     <div className='div div_1'>
@@ -69,25 +66,37 @@ export default function Home() {
                         <h4>Website Maintenance <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Ensuring your website remains up to date, secure, and optimized for peak performance, freeing you to focus on your business.</p>
                     </div>
+
+                    <Link className='link services_button' href="/services">
+                            <button className='button'>More Details and Pricing</button>
+                        </Link>
                 </section>
 
                 <section id='work'>
                     <div className='heading'>
                         <h3>Featured Work</h3>
                         <p>Take a look at some of the unique web experiences I've crafted for my clients.</p>
-                        <Link className='link' href="/work">
+                    </div>
+
+                    <div className='div_1'>
+                        <h4>Featured project 1</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi nostrum, magnam eveniet possimus impedit assumenda eos repellendus provident esse.</p>
+                    </div>
+
+                    <div className='div_2'>
+                        <h4>Featured project 2</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi nostrum, magnam eveniet possimus impedit assumenda eos repellendus provident esse.</p>
+                    </div>
+
+                    <Link className='link work_button' href="/work">
                             <button className='button'>Other Projects</button>
                         </Link>
-                    </div>
                 </section>
 
                 <section id='process'>
                     <div className='heading'>
                         <h3>My Process</h3>
                         <p>Efficient and transparent web development journey.</p>
-                        <Link className='link' href="/process">
-                            <button className='button'>Explore the Journey</button>
-                        </Link>
                     </div>
 
                     <div className='div div_1'>
@@ -109,6 +118,10 @@ export default function Home() {
                         <h4>Launch & Maintenance</h4>
                         <p className='gradientBorder'>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
                     </div>
+
+                    <Link className='link explore_button' href="/process">
+                            <button className='button'>Explore the Journey</button>
+                    </Link>
                 </section>
 
                 <section id='cta'>

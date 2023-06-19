@@ -39,3 +39,10 @@ nav {
     width: 60px;
     height: 60px;
 }
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+}

@@ -12,12 +12,18 @@
 /* ------------------------------ Variables ------------------------------ */
 $indigo: #6526D1;
 $magenta: #D02670;
-$background: #070707;
+// $background: #070707;
+// $background_medium_faded: rgba(122, 122, 122, 0.15);
+// $background_faded: rgba(26, 26, 26, 0.25);
+// $dark_grey: #7A7A7A;
+// $light_grey: #D0D0D0;
+// $white: #FFFFFF;
+$background: #D0D0D0;
 $background_medium_faded: rgba(122, 122, 122, 0.15);
 $background_faded: rgba(26, 26, 26, 0.25);
-$dark_grey: #7A7A7A;
-$light_grey: #D0D0D0;
-$white: #FFFFFF;
+$dark_grey: #070707;
+$light_grey: #070707;
+$white: #070707;
 $gradient_indigo: linear-gradient(90deg, $indigo 0%, $magenta 100%);
 $gradient_indigo_faded: linear-gradient(90deg, rgba(rgba(101, 38, 209, 1), 0.95) 0%, rgba(208, 38, 112, 0.75) 100%);
 $gradient_background: linear-gradient(90deg, rgba(122, 122, 122, 0.75) 0%, rgba(122, 122, 122, 0) 80%);
@@ -31,12 +37,12 @@ $text_font: 'Proxima_Nova',
 sans-serif;
 
 // ---------- Fluid fonts ----------
-$button: clamp(0.81rem, 0.25vw + 0.75rem, 1rem);
-$paragraph: clamp(1.02rem, 0.65vw + 0.85rem, 1.5rem);
-$header_4: clamp(1.27rem, 1.31vw + 0.94rem, 2.25rem);
-$header_3: clamp(1.59rem, 2.38vw + 0.99rem, 3.38rem);
-$header_2: clamp(1.98rem, 4.11vw + 0.96rem, 5.06rem);
-$header_1: clamp(2.48rem, 6.82vw + 0.77rem, 7.59rem);
+$button: clamp(0.88rem, 0.19vw + 0.83rem, 1rem);
+$paragraph: clamp(1.09rem, 0.65vw + 0.93rem, 1.51rem);
+$header_4: clamp(1.37rem, 1.43vw + 1.01rem, 2.3rem);
+$header_3: clamp(1.71rem, 2.72vw + 1.03rem, 3.48rem);
+$header_2: clamp(2.14rem, 4.82vw + 0.93rem, 5.27rem);
+$header_1: clamp(2.67rem, 8.17vw + 0.63rem, 7.98rem);
 
 // Basiscs
 * {
@@ -156,7 +162,7 @@ a {
 /* ------------------------------ Buttons ------------------------------ */
 .button {
   background: $gradient_indigo_faded;
-  color: $white;
+  color: $background;
   font-family: $text_font;
   font-size: $button;
   letter-spacing: 1px;
