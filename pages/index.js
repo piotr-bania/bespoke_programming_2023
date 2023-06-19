@@ -19,7 +19,7 @@ export default function Home() {
 
                 <section id='hero'>
                     <div className='heading'>
-                        <h1>Innovative 3D Web Development Tailored to Your Business Needs</h1>
+                        <h1>Innovative Web Development Tailored to Your Business Needs</h1>
                     </div>
 
                     <div className='subheading'>
@@ -41,42 +41,80 @@ export default function Home() {
                         <h3>Services</h3>
                         <p>From custom landing pages to complex 3D animations, I offer a variety of web development services to meet your needs.</p>
                         <Link className='link' href="/services">
-                            <button className='button'>go to services page</button>
+                            <button className='button'>More Details and Pricing</button>
                         </Link>
                     </div>
 
                     <div className='div div_1'>
                         <h4>Bespoke 3D Website <abbr className='indigo'>⇀</abbr></h4>
-                        <p>Creating immersive web experiences with custom 3D elements tailored to your brand and objectives.</p>
+                        <p className='gradientBorder'>Creating immersive web experiences with custom 3D elements tailored to your brand and objectives.</p>
                     </div>
                     
                     <div className='div div_2'>
                         <h4>Landing Page <abbr className='indigo'>⇀</abbr></h4>
-                        <p>Crafting visually captivating standalone web pages that drive conversions and engage users.</p>
+                        <p className='gradientBorder'>Crafting visually captivating standalone web pages that drive conversions and engage users.</p>
                     </div>
                     
                     <div className='div div_3'>
                         <h4>Single Page Application <abbr className='indigo'>⇀</abbr></h4>
-                        <p></p>
+                        <p className='gradientBorder'>Building dynamic websites that seamlessly load new content without page reloads, enhancing user experience.</p>
                     </div>
                     
                     <div className='div div_4'>
                         <h4>Web Development from Your Design <abbr className='indigo'>⇀</abbr></h4>
-                        <p></p>
+                        <p className='gradientBorder'>Translating your unique design into a fully functional and responsive website, coded from scratch.</p>
                     </div>
 
                     <div className='div div_5'>
                         <h4>Website Maintenance <abbr className='indigo'>⇀</abbr></h4>
-                        <p></p>
+                        <p className='gradientBorder'>Ensuring your website remains up to date, secure, and optimized for peak performance, freeing you to focus on your business.</p>
                     </div>
                 </section>
 
-                <section>
-                    <p>Take a look at some of the unique web experiences I've crafted for my clients. (Link to Work page for more details)</p>
+                <section id='work'>
+                    <div className='heading'>
+                        <h3>Featured Work</h3>
+                        <p>Take a look at some of the unique web experiences I've crafted for my clients.</p>
+                        <Link className='link' href="/work">
+                            <button className='button'>Other Projects</button>
+                        </Link>
+                    </div>
                 </section>
 
-                <section className='quote'>
-                    <h2>Ready to elevate your online presence? Let's talk about your project.</h2>
+                <section id='process'>
+                    <div className='heading'>
+                        <h3>My Process</h3>
+                        <p>Efficient and transparent web development journey.</p>
+                        <Link className='link' href="/process">
+                            <button className='button'>Explore the Journey</button>
+                        </Link>
+                    </div>
+
+                    <div className='div div_1'>
+                        <h4>Information Gathering & Planning</h4>
+                        <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
+                    </div>
+
+                    <div className='div div_2'>
+                        <h4>Build</h4>
+                        <p className='gradientBorder'>I design and develop your website, employing the latest 3D technologies for a truly engaging user experience.</p>
+                    </div>
+
+                    <div className='div div_3'>
+                        <h4>Testing</h4>
+                        <p className='gradientBorder'>I rigorously test all aspects of your website, ensuring op􀆟mal performance and seamless user interaction with 3D elements.</p>
+                    </div>
+
+                    <div className='div div_4'>
+                        <h4>Launch & Maintenance</h4>
+                        <p className='gradientBorder'>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
+                    </div>
+                </section>
+
+                <section id='cta'>
+                    <div className='heading'>
+                        <h2>Ready to <abbr className='magenta'>elevate </abbr>your online presence? <abbr className='indigo'>Let's talk </abbr>about your project.</h2>
+                    </div>
                 </section>
             </main>
         </>
