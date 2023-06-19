@@ -13,6 +13,7 @@
 $indigo: #6526D1;
 $magenta: #D02670;
 $background: #070707;
+$background_medium_faded: rgba(122, 122, 122, 0.15);
 $background_faded: rgba(26, 26, 26, 0.25);
 $dark_grey: #7A7A7A;
 $light_grey: #D0D0D0;
@@ -30,12 +31,12 @@ $text_font: 'Proxima_Nova',
 sans-serif;
 
 // ---------- Fluid fonts ----------
-$button: clamp(0.81rem, 0.23vw + 0.76rem, 0.94rem);
-$paragraph: clamp(1.02rem, 0.56vw + 0.87rem, 1.33rem);
-$header_4: clamp(1.27rem, 1.1vw + 0.99rem, 1.87rem);
-$header_3: clamp(1.59rem, 1.93vw + 1.1rem, 2.65rem);
-$header_2: clamp(1.98rem, 3.21vw + 1.18rem, 3.75rem);
-$header_1: clamp(2.48rem, 5.13vw + 1.2rem, 5.3rem);
+$button: clamp(0.81rem, 0.25vw + 0.75rem, 1rem);
+$paragraph: clamp(1.02rem, 0.65vw + 0.85rem, 1.5rem);
+$header_4: clamp(1.27rem, 1.31vw + 0.94rem, 2.25rem);
+$header_3: clamp(1.59rem, 2.38vw + 0.99rem, 3.38rem);
+$header_2: clamp(1.98rem, 4.11vw + 0.96rem, 5.06rem);
+$header_1: clamp(2.48rem, 6.82vw + 0.77rem, 7.59rem);
 
 // Basiscs
 * {
@@ -69,7 +70,7 @@ h4 {
   color: $white;
   font-family: $header_font;
   margin: 20px auto;
-  line-height: 1.1;
+  line-height: 1;
 }
 
 h1 {
@@ -176,15 +177,14 @@ a {
 /* ------------------------------ Sections ------------------------------ */
 section {
   display: grid;
-  gap: 12px;
   margin: 3vh 5vw;
-  // border: 1px dotted turquoise;
 }
 
 /* ------------------------------ Desktop ------------------------------ */
 @media screen and (min-width: 1024px) {
   section {
     grid-template-columns: repeat(12, 1fr);
+    gap: 75px;
   }
 }
 
@@ -192,6 +192,7 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   section {
     grid-template-columns: repeat(8, 1fr);
+    gap: 50px;
   }
 }
 
@@ -199,5 +200,6 @@ section {
 @media screen and (max-width: 767px) {
   section {
     grid-template-columns: repeat(6, 1fr);
+    gap: 25px;
   }
 }

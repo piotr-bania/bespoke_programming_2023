@@ -21,7 +21,7 @@ const Navbar = () => {
                 </li>
                 
                 <Link href="/quote">
-                    <button className='button'>Quote</button>
+                    <button className='button'>Get Free Quote</button>
                 </Link>
             </div>
         </nav>

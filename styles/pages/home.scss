@@ -1,7 +1,7 @@
 @import '/styles/globals';
 
 #hero {
-    height: 90vh;
+    height: 95vh;
 
     .heading,
     .subheading {
@@ -18,12 +18,63 @@
     z-index: -1;
 }
 
+#quote {
+    background: $background_medium_faded;
+    margin: 0;
+    padding: 5% 0;
+
+    .heading {
+        grid-area: 1 / 2 / 2 / 12;
+        text-align: center;
+    }
+}
+
+#services {
+    padding: 5% 0;
+
+    .heading {
+        grid-area: 1 / 1 / 2 / 6;
+    }
+
+    .div {
+        background: $gradient_background_faded;
+        width: 100%;
+        padding: 7.5% 10%;
+        border: 1px solid $background;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            border: 1px solid $dark_grey;
+        }
+    }
+
+    .div_1 {
+        grid-area: 1 / 7 / 2 / 12;
+    }
+
+    .div_2 {
+        grid-area: 2 / 2 / 3 / 7;
+    }
+
+    .div_3 {
+        grid-area: 2 / 7 / 3 / 12;
+    }
+
+    .div_4 {
+        grid-area: 3 / 2 / 4 / 7;
+    }
+
+    .div_5 {
+        grid-area: 3 / 7 / 4 / 12;
+    }
+}
+
 /* ------------------------------ Desktop ------------------------------ */
 @media screen and (min-width: 1024px) {
     #hero {
         .heading {
-            top: 25%;
-            left: 50%;
+            top: 15%;
+            left: 45%;
             right: 10%;
         }
 
