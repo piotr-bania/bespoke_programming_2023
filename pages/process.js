@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 import GearAndPen from '../components/process/GearAndPen'
 import ConstructionSite from '../components/process/ConstructionSite'
 import MagnifyingGlass from '../components/process/MagnifyingGlass'
@@ -15,7 +16,12 @@ export default function Process() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_3 />
 
                 <section id='process'>
@@ -43,7 +49,7 @@ export default function Process() {
                         <p>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

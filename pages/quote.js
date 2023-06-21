@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 import Quotation from '../components/quote/Quotation'
 import Overlay_1 from '../components/layout/Overlay_1'
 
@@ -12,7 +13,12 @@ export default function Faq() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_1 />
 
                 <section>
@@ -20,7 +26,7 @@ export default function Faq() {
                     <h4>Get a Quote</h4>
                     <p>Feel free to add as much information as possible. The more you tell me, the more accurate I can be with your quote.</p>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

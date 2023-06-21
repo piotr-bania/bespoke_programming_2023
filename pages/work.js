@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 import Carousel from '../components/work/Carousel'
 import Overlay_4 from '../components/layout/Overlay_4'
 
@@ -12,7 +13,12 @@ export default function Process() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_4 />
 
                 <section>
@@ -22,7 +28,7 @@ export default function Process() {
                     <h4>Project 2</h4>
                     <p>For my personal portfolio website, I showcased my skills in HTML, CSS, Sass, and the integration of 3D elements.</p>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

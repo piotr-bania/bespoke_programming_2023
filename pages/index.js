@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import { motion as m } from 'framer-motion'
 import Overlay_1 from '../components/layout/Overlay_1'
 import DnaCanvas from '../components/home/DnaCanvas'
 
@@ -13,7 +14,12 @@ export default function Home() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_1 />
                 {/* <DnaCanvas /> */}
 
@@ -129,7 +135,7 @@ export default function Home() {
                         <h2>Ready to <abbr className='magenta'>elevate </abbr>your online presence? <abbr className='indigo'>Let's talk </abbr>about your project.</h2>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 import Book from '../components/blog/Book'
 import Overlay_2 from '../components/layout/Overlay_2'
 
@@ -12,7 +13,12 @@ export default function Blog() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_2 />
 
                 <section>
@@ -24,7 +30,7 @@ export default function Blog() {
                     <h4>Post 3</h4>
                     <p>Case Study: Revitalizing a Website with 3D Elements</p>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

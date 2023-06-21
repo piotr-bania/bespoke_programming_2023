@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 import Questions from '../components/faq/Questions'
 import Overlay_4 from '../components/layout/Overlay_4'
 
@@ -12,7 +13,12 @@ export default function Faq() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_4 />
 
                 <section id='faq'>
@@ -26,7 +32,7 @@ export default function Faq() {
                         <p>A 3D website can provide an engaging and interactive experience for your users. It adds depth to your website's design, making it more memorable and impactful. 3D elements can be used to tell a story, showcase a product, or provide a unique navigation experience.</p>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

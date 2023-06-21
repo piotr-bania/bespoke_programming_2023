@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Monitor from '../components/services/Landing'
 import SinglePageApp from '../components/services/Single'
 import BespokeWebsite from '../components/services/Bespoke'
+import { motion as m } from 'framer-motion'
 import Overlay_2 from '../components/layout/Overlay_2'
 
 export default function Services() {
@@ -14,7 +15,12 @@ export default function Services() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_2 />
 
                 <section id='services'>
@@ -62,7 +68,7 @@ export default function Services() {
                         <p className='magenta'><i>Pricing: £50 per hour.</i></p>
                     </div>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }

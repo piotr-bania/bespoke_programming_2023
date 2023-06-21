@@ -11,6 +11,7 @@
 
 /* ------------------------------ Variables ------------------------------ */
 $indigo: #6526D1;
+$blend: #9B26A1;
 $magenta: #D02670;
 $background: #070707;
 $background_medium_faded: rgba(122, 122, 122, 0.15);
@@ -172,6 +173,47 @@ a {
   &:hover {
     background: $gradient_indigo;
   }
+}
+
+/* ------------------------------ Block transition ------------------------------ */
+.block_indigo {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $indigo;
+  width: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.block_blend {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $blend;
+  width: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.block_magenta {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $magenta;
+  width: 0;
+  height: 100vh;
+  z-index: 10;
+}
+
+.block_white {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: $white;
+  width: 0;
+  height: 100vh;
+  z-index: 10;
 }
 
 /* ------------------------------ Sections ------------------------------ */

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { motion as m } from 'framer-motion'
 import Mailbox from '../components/contact/Mailbox'
 import Overlay_3 from '../components/layout/Overlay_3'
 
@@ -12,7 +13,12 @@ export default function Blog() {
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
 
-            <main>
+            <m.main
+                initial={{opacity: 0, transition: {duration: 1}}}
+                animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
+                exit={{opacity: 0, transition: {duration: 1}}}
+                transition={{duration: 1, ease: 'easeOut'}}
+                >
                 <Overlay_3 />
 
                 <section>
@@ -22,7 +28,7 @@ export default function Blog() {
                     <h4>Office Hours:</h4>
                     <p>I'm available from Monday to Friday, 9.00-17.00 GMT, and Saturday to Sunday, 9.00-13.00 GMT.</p>
                 </section>
-            </main>
+            </m.main>
         </>
     )
 }
