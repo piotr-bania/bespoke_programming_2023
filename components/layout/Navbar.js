@@ -4,7 +4,7 @@ import LogoCanvas from '../navbar/LogoCanvas'
 
 const Navbar = () => {
     return (
-        <nav>
+        <section id='navbar'>
             <Link href="/">
                 <LogoCanvas />
             </Link>
@@ -24,7 +24,7 @@ const Navbar = () => {
                     <button className='button'>Get Free Quote</button>
                 </Link>
             </div>
-        </nav>
+        </section>
     )
 }
 

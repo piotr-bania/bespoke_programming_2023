@@ -1,15 +1,13 @@
 @import '/styles/globals';
 
-nav {
+#navbar {
     position: fixed;
     top: 0;
     left: 0;
-    width: calc(100% - 10%);
+    height: 60px;
     display: flex;
-    gap: 20px;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 5%;
     z-index: 100;
 
     div {
@@ -34,15 +32,38 @@ nav {
 
 .canvas_navbar {
     position: fixed;
-    top: 25px;
-    left: 5%;
     width: 60px;
     height: 60px;
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    #navbar {
+        width: calc(100% - 120px);
+    }
+
+    .canvas_navbar {
+        top: 30px;
+        left: 60px;
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .canvas_navbar {
+        top: 20px;
+        left: 40px;
+    }
 }
 
 /* ------------------------------ Smartphone ------------------------------ */
 @media screen and (max-width: 767px) {
     .menu {
         display: none;
+    }
+
+    .canvas_navbar {
+        top: 10px;
+        left: 20px;
     }
 }

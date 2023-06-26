@@ -34,6 +34,10 @@ export default function Home() {
                             <button className='button'>View Latest Projects</button>
                         </Link>
                     </div>
+
+                    <div className='vertical_text'>
+                        <h1>Bespoke Programming</h1>
+                    </div>
                 </section>
 
                 <section id='quote'>

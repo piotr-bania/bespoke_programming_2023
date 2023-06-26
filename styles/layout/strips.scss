@@ -6,7 +6,7 @@
     width: 1px;
     height: 100vh;
     background: linear-gradient(180deg, $white 0%, $background 100%);
-    opacity: 0.25;
+    opacity: 0.5;
     z-index: -1;
 }
 
@@ -15,19 +15,19 @@
 }
 
 .one {
-    left: 27.5%;
+    left: 10.677%;
 }
 
 .two {
-    left: 50%;
+    left: 42.084%;
 }
 
 .three {
-    right: 27.5%;
+    right: 42.084%;
 }
 
 .four {
-    right: 5%;
+    right: 10.677%;
 }
 
 // ------------------------------ Overlay ------------------------------
@@ -39,6 +39,7 @@
     top: 0;
     opacity: 0.25;
     z-index: -1;
+    display: none;
 }
 
 .overlay_1 {
