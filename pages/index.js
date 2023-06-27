@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { motion as m } from 'framer-motion'
 import Overlay_1 from '../components/layout/Overlay_1'
-import DnaCanvas from '../components/home/DnaCanvas'
+import HeroCanvas from '../components/home/HeroCanvas'
 
 export default function Home() {
     return (
@@ -21,7 +21,7 @@ export default function Home() {
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
                 <Overlay_1 />
-                {/* <DnaCanvas /> */}
+                <HeroCanvas />
 
                 <section id='hero'>
                     <div className='heading'>
@@ -33,10 +33,6 @@ export default function Home() {
                         <Link className='link' href="/work">
                             <button className='button'>View Latest Projects</button>
                         </Link>
-                    </div>
-
-                    <div className='vertical_text'>
-                        <h1>Bespoke Programming</h1>
                     </div>
                 </section>
 
