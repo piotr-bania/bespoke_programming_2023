@@ -9,11 +9,11 @@ const Hero = (props) => {
 
     const globe = useGLTF('./models/globe.gltf')
     const animations = useAnimations(globe.animations, globe.scene)
-
+    
     useEffect(() => {
-        const action = animations.actions.Action
-        action.play()
-        // console.log(action)
+        const action = animations.actions
+        // action.play()
+        console.log(action)
     }, [])
 
     useFrame((state, delta) => {
@@ -22,7 +22,7 @@ const Hero = (props) => {
     })
 
     return (
-        <mesh ref={globeRef} >
+        <mesh ref={globeRef} scale={3} >
             <primitive object={globe.scene} />
         </mesh>
     )
