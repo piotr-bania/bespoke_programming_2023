@@ -21,7 +21,7 @@ export default function Home() {
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
                 <Overlay_1 />
-                <HeroCanvas />
+                {/* <HeroCanvas /> */}
 
                 <section id='hero'>
                     <div className='heading'>
