@@ -1,29 +1,63 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import LogoCanvas from '../navbar/LogoCanvas'
+import {motion as m} from 'framer-motion'
+
+const variants = {
+    open: {opacity: 1, x: '10%'},
+    closed: {opacity: 0, x: "15%"},
+}
 
 const Navbar = () => {
+    const router = useRouter()
+    const [isOpen, setIsOpen] = useState(false)
+
+    useEffect(() => {
+        const handleRouteChange = () => {
+            setIsOpen(false)
+        }
+
+        router.events.on('routeChangeStart', handleRouteChange)
+
+        // Clean up the event listener on unmount
+        return () => {
+            router.events.off('routeChangeStart', handleRouteChange)
+        }
+    }, [router.events])
+
     return (
         <section id='navbar'>
             <Link href="/">
                 <LogoCanvas />
             </Link>
 
-            <div>
-                <li className='menu'>
-                    <Link className='link' href="/services">Services</Link>
-                    <Link className='link' href="/process">Process</Link>
-                    <Link className='link' href="/work">Work</Link>
-                    <Link className='link' href="/about">About</Link>
-                    <Link className='link' href="/blog">Blog</Link>
-                    <Link className='link' href="/contact">Contact</Link>
-                    <Link className='link' href="/faq">FAQ</Link>
-                </li>
-                
-                <Link href="/quote">
-                    <button className='button'>Get Free Quote</button>
-                </Link>
-            </div>
+            <nav className={`menu ${isOpen ? 'open' : 'closed'}`} onClick={() => setIsOpen(!isOpen)} >
+                <svg className='line top'></svg>
+                <svg className='line middle'></svg>
+                <svg className='line bottom'></svg>
+            </nav>
+
+            <m.li className='menu_container'>
+                <m.div 
+                    className='menu_links'
+                    initial='closed'
+                    animate={isOpen ? 'open' : 'closed'}
+                    variants={variants}
+                    transition={{duration: 1, ease: 'easeOut'}}
+                    >
+                    <Link className='link' href="/services"><h2>Services</h2></Link>
+                    <Link className='link' href="/process"><h2>Process</h2></Link>
+                    <Link className='link' href="/work"><h2>Work</h2></Link>
+                    <Link className='link' href="/about"><h2>About</h2></Link>
+                    <Link className='link' href="/blog"><h2>Blog</h2></Link>
+                    <Link className='link' href="/contact"><h2>Contact</h2></Link>
+                    <Link className='link' href="/faq"><h2>FAQ</h2></Link>
+                    <Link className='link' href="/quote">
+                        <button className='button'>Get Free Quote</button>
+                    </Link>
+                </m.div>
+            </m.li>
         </section>
     )
 }

@@ -6,32 +6,22 @@
     width: 1px;
     height: 100vh;
     background: linear-gradient(180deg, $white 0%, $background 100%);
-    opacity: 0.5;
+    opacity: 0.25;
     z-index: -1;
 }
 
-.one, .two, .three, .four {
+.one,
+.two,
+.three,
+.four {
     top: 0;
 }
 
-.one {
-    left: 10.677%;
-}
-
-.two {
-    left: 42.084%;
-}
-
-.three {
-    right: 42.084%;
-}
-
-.four {
-    right: 10.677%;
-}
-
 // ------------------------------ Overlay ------------------------------
-.overlay_1, .overlay_2, .overlay_3, .overlay_4 {
+.overlay_1,
+.overlay_2,
+.overlay_3,
+.overlay_4 {
     background: $gradient_overlay;
     position: fixed;
     height: 100vh;
@@ -56,4 +46,61 @@
 
 .overlay_4 {
     left: 72.5%;
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    .one {
+        left: 9.75%;
+    }
+    
+    .two {
+        left: 42%;
+    }
+    
+    .three {
+        right: 42%;
+    }
+    
+    .four {
+        right: 9.75%;
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .one {
+        left: 9.75%;
+    }
+    
+    .two {
+        left: 42%;
+    }
+    
+    .three {
+        right: 42%;
+    }
+    
+    .four {
+        right: 9.75%;
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    .one {
+        left: calc($small * 0.6);
+    }
+    
+    .two {
+        left: 33%;
+    }
+    
+    .three {
+        right: 33%;
+    }
+    
+    .four {
+        right: calc($small * 0.6);
+    }
 }

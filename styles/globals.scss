@@ -14,6 +14,7 @@ $indigo: #6526D1;
 $blend: #9B26A1;
 $magenta: #D02670;
 $background: #070707;
+$menu_background: rgba(7, 7, 7, 0.95);
 $background_medium_faded: rgba(122, 122, 122, 0.15);
 $background_faded: rgba(26, 26, 26, 0.25);
 $dark_grey: #7A7A7A;
@@ -38,6 +39,11 @@ $header_4: clamp(1.37rem, 1.43vw + 1.01rem, 2.3rem);
 $header_3: clamp(1.71rem, 2.72vw + 1.03rem, 3.48rem);
 $header_2: clamp(2.14rem, 4.82vw + 0.93rem, 5.27rem);
 $header_1: clamp(2.67rem, 8.17vw + 0.63rem, 7.98rem);
+
+// ---------- Fluid space ----------
+$small: clamp(1.13rem, calc(1.04rem + 0.41vw), 1.50rem);
+$medium: clamp(1.69rem, calc(1.57rem + 0.61vw), 2.25rem);
+$large: clamp(2.25rem, calc(2.09rem + 0.81vw), 3.00rem);
 
 // Basiscs
 * {
@@ -167,8 +173,9 @@ a {
   border: none;
   cursor: pointer;
   padding: 1rem 2rem;
-  transition: all 0.3s ease-in-out;
   margin: 1rem auto;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
 
   &:hover {
     background: $gradient_indigo;
@@ -219,14 +226,15 @@ a {
 /* ------------------------------ Sections ------------------------------ */
 section {
   display: grid;
-  margin: 30px 60px;
+  gap: $small;
+  // border: 1px dotted cyan;
 }
 
 /* ------------------------------ Desktop ------------------------------ */
 @media screen and (min-width: 1024px) {
   section {
     grid-template-columns: repeat(12, 1fr);
-    gap: 75px;
+    margin: $small $large;
   }
 }
 
@@ -234,7 +242,7 @@ section {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   section {
     grid-template-columns: repeat(8, 1fr);
-    gap: 50px;
+    margin: $small $medium;
   }
 }
 
@@ -242,6 +250,6 @@ section {
 @media screen and (max-width: 767px) {
   section {
     grid-template-columns: repeat(6, 1fr);
-    gap: 25px;
+    margin: $small $small;
   }
 }
