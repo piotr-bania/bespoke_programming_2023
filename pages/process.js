@@ -14,6 +14,17 @@ export default function Process() {
                 <meta name="description" content="Bespoke Programming | Freelance Developer | London" />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/svg/logo.svg" />
+                
+                {/* Google tag (gtag.js) */}
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-JH1ZN3CD7V"></script>
+                <script>
+                    window.dataLayer = window.dataLayer || []
+                    function gtag() {
+                        dataLayer.push(arguments)
+                    }
+                    gtag('js', new Date())
+                    gtag('config', 'G-JH1ZN3CD7V')
+                </script>
             </Head>
 
             <m.main
