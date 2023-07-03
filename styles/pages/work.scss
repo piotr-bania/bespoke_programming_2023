@@ -1,11 +1,11 @@
 @import '/styles/globals';
 
-#process {
+#work {
     div {
         margin: $small 0;
     }
 
-    .planning, .build, .testing, .maintenance {
+    .project {
         padding: $small $large;
         margin: 0 $small;
         background: $background_faded;
@@ -13,55 +13,55 @@
         border-radius: calc($small * 0.25);
     }
     
-    .planning {
-        grid-area: 2 / 5 / 3 / 12;
+    .project_1 {
+        grid-area: 2 / 5 / 3 / 11;
     }
 
-    .build {
-        grid-area: 3 / 3 / 4 / 10;
+    .project_2 {
+        grid-area: 3 / 3 / 4 / 9;
     }
 
-    .testing {
-        grid-area: 4 / 5 / 5 / 12;
+    .project_3 {
+        grid-area: 4 / 5 / 5 / 11;
     }
 
-    .maintenance {
-        grid-area: 5 / 3 / 6 / 10;
+    .project_4 {
+        grid-area: 5 / 3 / 6 / 9;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        .planning {
+        .project_1 {
             grid-area: 2 / 3 / 3 / 8;
         }
     
-        .build {
+        .project_2 {
             grid-area: 3 / 2 / 4 / 7;
         }
     
-        .testing {
+        .project_3 {
             grid-area: 4 / 3 / 5 / 8;
         }
     
-        .maintenance {
+        .project_4 {
             grid-area: 5 / 2 / 6 / 7;
         }
     }
 
     @media screen and (max-width: 767px) {
 
-        .planning {
+        .project_1 {
             grid-area: 2 / 1 / 3 / 7;
         }
     
-        .build {
+        .project_2 {
             grid-area: 3 / 1 / 4 / 7;
         }
     
-        .testing {
+        .project_3 {
             grid-area: 4 / 1 / 5 / 7;
         }
     
-        .maintenance {
+        .project_4 {
             grid-area: 5 / 1 / 6 / 7;
         }
     }

@@ -7,9 +7,16 @@ const nextConfig = {
         test: /\.(glsl|vs|fs|vert|frag)$/,
         use: ['raw-loader'],
     })
-
-    return config;
-}
+    return config
+  }
 }
 
 module.exports = nextConfig
+
+const path = require('path')
+
+module.exports = {
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+}

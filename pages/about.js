@@ -20,9 +20,29 @@ export default function About() {
                 >
                 <Overlay_1 />
                 
-                <section>
-                    <h4>I am a self-taught web developer based in London, UK. I am passionate about coding, 3D web development, and translating designs into front-end code that creates engaging digital environments.</h4>
-                    <p>I am proficient with HTML5, CSS3, JavaScript, Node.js, React.js, Next.js, and have 7+ years of experience with WordPress. My specialty lies in integrating 3D elements into web development projects.</p>
+                <section id='about'>
+                    
+                    <div className='heading'>
+                        <h2>Bespoke Programming —</h2>
+                        <h3>The Creative Force Behind Your Web Success</h3>
+                        <p>Driving Innovation in Custom Web Solutions</p>
+                    </div>
+
+                    <div className='paragraph_1'>
+                        <p>Welcome to <abbr className='magenta'>Bespoke Programming</abbr>, where passion meets expertise in web development. <br /><br /> I'm <abbr className='indigo'>Piotr</abbr>, a creative web developer dedicated to pushing the boundaries of creativity and innovation. At Bespoke Programming, I specialize in crafting custom, hand-coded projects that go beyond the limitations of pre-built templates. My mission is to deliver exceptional web experiences that truly represent your brand and captivate your audience.</p>
+                    </div>
+
+                    <div className='paragraph_2'>
+                        <p>I believe that every website should be as unique as the business it represents. By combining technical expertise with a deep understanding of <abbr className='magenta'>your vision</abbr>, I create tailored web solutions that speak directly to your target audience. <br /><br /> From striking visuals to seamless user interactions, I strive to create a digital experience that sets you apart from the competition.</p>
+                    </div>
+
+                    <div className='paragraph_3'>
+                        <p>At Bespoke Programming, I take pride in my commitment to excellence and attention to detail. <abbr className='indigo'>I stay up-to-date</abbr> with the latest industry trends and technologies to ensure that my clients receive cutting-edge solutions. <br /><br /> My hand-coded approach allows me to explore the full potential of web development, unleashing the power of creativity and interactivity.</p>
+                    </div>
+
+                    <div className='paragraph_4'>
+                        <p>With a collaborative mindset, I work closely with my clients to understand their goals and transform their ideas into reality. I believe in building long-lasting partnerships based on trust, transparency, and effective communication. <br /><br /> <abbr className='magenta'>Your success is my success</abbr>, and I am dedicated to helping you achieve your web development objectives.</p>
+                    </div>
                 </section>
             </m.main>
         </>

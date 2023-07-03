@@ -34,7 +34,7 @@ export default function Home() {
                 </section>
 
                 <section id='quote'>
-                    <div className='heading'>
+                    <div className='quote'>
                         <h2>I take pride in crafting <abbr className='magenta'>every aspect</abbr> of my projects <abbr className='indigo'>from scratch</abbr>, without relying on Content Management Systems.</h2>
                     </div>
                 </section>
@@ -81,12 +81,12 @@ export default function Home() {
                         <p>Take a look at some of the unique web experiences I've crafted for my clients.</p>
                     </div>
 
-                    <div className='div_1'>
+                    <div className='div_1 work'>
                         <h4>Featured project 1</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi nostrum, magnam eveniet possimus impedit assumenda eos repellendus provident esse.</p>
                     </div>
 
-                    <div className='div_2'>
+                    <div className='div_2 work'>
                         <h4>Featured project 2</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi nostrum, magnam eveniet possimus impedit assumenda eos repellendus provident esse.</p>
                     </div>
@@ -128,7 +128,7 @@ export default function Home() {
                 </section>
 
                 <section id='cta'>
-                    <div className='heading'>
+                    <div className='cta'>
                         <h2>Ready to <abbr className='magenta'>elevate </abbr>your online presence? <abbr className='indigo'>Let's talk </abbr>about your project.</h2>
                     </div>
                 </section>

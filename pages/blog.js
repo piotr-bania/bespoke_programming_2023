@@ -21,14 +21,32 @@ export default function Blog() {
                 >
                 <Overlay_2 />
 
-                <section>
+                <section id='blog'>
                     <Book />
-                    <h4>Post 1</h4>
-                    <p>The Impact of 3D Elements on Your Website's User Experience</p>
-                    <h4>Post 2</h4>
-                    <p>Why Your Business Website Needs 3D Elements</p>
-                    <h4>Post 3</h4>
-                    <p>Case Study: Revitalizing a Website with 3D Elements</p>
+                    <div className='heading'>
+                        <h3>Explore Insights and Inspiration from My Blog</h3>
+                        <p>Stay Informed and Inspired in the World of Web Development</p>
+                    </div>
+                    
+                    <div className='div_1 blog'>
+                        <h4>Post 1</h4>
+                        <p>The Impact of 3D Elements on Your Website's User Experience</p>
+                    </div>
+                    
+                    <div className='div_2 blog'>
+                        <h4>Post 2</h4>
+                        <p>Why Your Business Website Needs 3D Elements</p>
+                    </div>
+
+                    <div className='div_3 blog'>
+                        <h4>Post 3</h4>
+                        <p>Case Study: Revitalizing a Website with 3D Elements</p>
+                    </div>
+
+                    <div className='div_4 blog'>
+                        <h4>Post 4</h4>
+                        <p>How to Create a 3D Website</p>
+                    </div>
                 </section>
             </m.main>
         </>

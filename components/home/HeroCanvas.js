@@ -16,7 +16,7 @@ const HeroCanvas = () => {
                 animate={{opacity: 1, transition: {delay: 1, duration: 2}}}
                 exit={{opacity: 0, transition: {duration: 1}}}
                 >
-                <Canvas className='canvas' shadows>
+                <Canvas shadows>
                     <Suspense fallback={null}>
                         {/* <Camera /> */}
                         <PerspectiveCamera makeDefault position={[-12, 0, 45]} ref={cameraRef} />
