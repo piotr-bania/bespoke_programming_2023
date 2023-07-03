@@ -19,10 +19,10 @@ const HeroCanvas = () => {
                 <Canvas className='canvas' shadows>
                     <Suspense fallback={null}>
                         {/* <Camera /> */}
-                        <PerspectiveCamera makeDefault position={[-7, 0, 45]} ref={cameraRef} />
+                        <PerspectiveCamera makeDefault position={[-12, 0, 45]} ref={cameraRef} />
                         {/* <ambientLight intensity={0.15} /> */}
                         {/* <pointLight position={[-15, 5, 10]} /> */}
-                        <Environment files='./environment/peppermint_powerplant_2_1k.hdr' />
+                        <Environment files='./environment/photo_studio_loft_hall_1k.hdr' />
                         <Hero />
                         {/* <Controls /> */}
                     </Suspense>

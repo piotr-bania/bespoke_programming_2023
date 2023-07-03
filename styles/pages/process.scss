@@ -1,0 +1,89 @@
+@import '/styles/globals';
+
+#process {
+    gap: calc(#{$large} * 2);
+
+    .heading {
+        margin: calc($large * 3) 0 0 0;
+    }
+
+    .magenta {
+        margin-top: $small;
+        text-transform: uppercase;
+    }
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    #process {
+        .heading {
+            grid-area: 1 / 2 / 2 / 7;
+        }
+
+        .planning {
+            grid-area: 2 / 5 / 3 / 11;
+        }
+
+        .build {
+            grid-area: 3 / 3 / 4 / 9;
+        }
+
+        .testing {
+            grid-area: 4 / 5 / 5 / 11;
+        }
+
+        .maintenance {
+            grid-area: 5 / 3 / 6 / 9;
+        }
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #process {
+        .heading {
+            grid-area: 1 / 2 / 2 / 6;
+        }
+
+        .planning {
+            grid-area: 2 / 4 / 3 / 9;
+        }
+
+        .build {
+            grid-area: 3 / 3 / 4 / 8;
+        }
+
+        .testing {
+            grid-area: 4 / 4 / 5 / 9;
+        }
+
+        .maintenance {
+            grid-area: 5 / 3 / 6 / 8;
+        }
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    #process {
+        .heading {
+            grid-area: 1 / 1 / 2 / 7;
+        }
+
+        .planning { 
+            grid-area: 2 / 1 / 3 / 7;
+        }
+
+        .build {
+            grid-area: 3 / 1 / 4 / 7;
+        }
+
+        .testing {
+            grid-area: 4 / 1 / 5 / 7;
+        }
+
+        .maintenance {
+            grid-area: 5 / 1 / 6 / 7;
+        }
+    }
+}

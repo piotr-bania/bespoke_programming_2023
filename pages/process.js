@@ -25,28 +25,33 @@ export default function Process() {
                 <Overlay_3 />
 
                 <section id='process'>
-                    <div>
+                    <div className='heading'>
+                        <h2>Process</h2>
+                        <p>Each project I undertake follows a carefully crafted process to ensure the best results. Here's how I work</p>
+                    </div>
+
+                    <div className='planning'>
                         <GearAndPen />
                         <h4>Information Gathering & Planning</h4>
-                        <p>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
+                        <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
                     </div>
 
-                    <div>
+                    <div className='build'>
                         <ConstructionSite />
                         <h4>Build</h4>
-                        <p>I design and develop your website, employing the latest 3D technologies for a truly engaging user experience.</p>
+                        <p className='gradientBorder'>I design and develop your website, employing the latest 3D technologies for a truly engaging user experience.</p>
                     </div>
 
-                    <div>
+                    <div className='testing'>
                         <MagnifyingGlass />
                         <h4>Testing</h4>
-                        <p>I rigorously test all aspects of your website, ensuring optimal performance and seamless user interaction with 3D elements.</p>
+                        <p className='gradientBorder'>I rigorously test all aspects of your website, ensuring optimal performance and seamless user interaction with 3D elements.</p>
                     </div>
 
-                    <div>
+                    <div className='maintenance'>
                         <Rocket />
                         <h4>Launch & Maintenance</h4>
-                        <p>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
+                        <p className='gradientBorder'>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
                     </div>
                 </section>
             </m.main>

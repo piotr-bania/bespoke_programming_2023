@@ -14,8 +14,8 @@ $indigo: #6526D1;
 $blend: #9B26A1;
 $magenta: #D02670;
 $background: #070707;
-$menu_background: rgba(7, 7, 7, 0.95);
-$background_medium_faded: rgba(122, 122, 122, 0.15);
+$menu_background: linear-gradient(90deg, rgba(7, 7, 7, 0.85) 65%, rgba(7, 7, 7, 0.25) 100%);
+$background_medium_faded: rgba(122, 122, 122, 0.25);
 $background_faded: rgba(26, 26, 26, 0.25);
 $dark_grey: #7A7A7A;
 $light_grey: #D0D0D0;
@@ -33,12 +33,12 @@ $text_font: 'Proxima_Nova',
 sans-serif;
 
 // ---------- Fluid fonts ----------
-$button: clamp(0.88rem, 0.19vw + 0.83rem, 1rem);
-$paragraph: clamp(1.09rem, 0.65vw + 0.93rem, 1.51rem);
-$header_4: clamp(1.37rem, 1.43vw + 1.01rem, 2.3rem);
-$header_3: clamp(1.71rem, 2.72vw + 1.03rem, 3.48rem);
-$header_2: clamp(2.14rem, 4.82vw + 0.93rem, 5.27rem);
-$header_1: clamp(2.67rem, 8.17vw + 0.63rem, 7.98rem);
+$button: clamp(0.89rem, 0.33vw + 0.81rem, 1.11rem);
+$paragraph: clamp(1.11rem, 0.69vw + 0.96rem, 1.57rem);
+$header_4: clamp(1.39rem, 1.25vw + 1.11rem, 2.22rem);
+$header_3: clamp(1.74rem, 2.11vw + 1.27rem, 3.14rem);
+$header_2: clamp(2.17rem, 3.41vw + 1.41rem, 4.44rem);
+$header_1: clamp(2.71rem, 5.35vw + 1.52rem, 6.28rem);
 
 // ---------- Fluid space ----------
 $small: clamp(1.13rem, calc(1.04rem + 0.41vw), 1.50rem);
@@ -149,7 +149,7 @@ a {
 
 .gradientBorder {
   background: linear-gradient(180deg, $indigo 0%, $magenta 100%);
-  background-size: 3px;
+  background-size: 2px;
   background-repeat: no-repeat;
   padding-left: 20px;
 }
@@ -171,6 +171,7 @@ a {
   line-height: 1;
   text-decoration: none;
   border: none;
+  border-radius: calc($small * 0.25);
   cursor: pointer;
   padding: 1rem 2rem;
   margin: 1rem auto;

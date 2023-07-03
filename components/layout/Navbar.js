@@ -5,8 +5,8 @@ import LogoCanvas from '../navbar/LogoCanvas'
 import {motion as m} from 'framer-motion'
 
 const variants = {
-    open: {opacity: 1, x: '10%'},
-    closed: {opacity: 0, x: "15%"},
+    open: {opacity: 1, x: '15%'},
+    closed: {opacity: 0, x: "20%"},
 }
 
 const Navbar = () => {
@@ -44,7 +44,7 @@ const Navbar = () => {
                     initial='closed'
                     animate={isOpen ? 'open' : 'closed'}
                     variants={variants}
-                    transition={{duration: 1, ease: 'easeOut'}}
+                    transition={{duration: 0.75, ease: 'easeOut', delay: 0.5}}
                     >
                     <Link className='link' href="/services"><h2>Services</h2></Link>
                     <Link className='link' href="/process"><h2>Process</h2></Link>

@@ -70,19 +70,19 @@
 /* ------------------------------ Tablet ------------------------------ */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .one {
-        left: 9.75%;
+        left: calc($small * 0.6);
     }
     
     .two {
-        left: 42%;
+        left: 33%;
     }
     
     .three {
-        right: 42%;
+        right: 33%;
     }
     
     .four {
-        right: 9.75%;
+        right: calc($small * 0.6);
     }
 }
 

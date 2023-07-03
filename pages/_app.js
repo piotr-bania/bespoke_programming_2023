@@ -3,6 +3,8 @@ import '../styles/layout/navbar.scss'
 import '../styles/layout/footer.scss'
 import '../styles/layout/strips.scss'
 import '../styles/pages/home.scss'
+import '../styles/pages/services.scss'
+import '../styles/pages/process.scss'
 
 import { motion as m, AnimatePresence } from 'framer-motion'
 import Layout from '../components/layout/Layout.js'

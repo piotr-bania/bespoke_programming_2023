@@ -26,9 +26,6 @@ export default function Home() {
                 <section id='hero'>
                     <div className='heading'>
                         <h1>Innovative Web Development Tailored to Your Business Needs</h1>
-                    </div>
-
-                    <div className='subheading'>
                         <p className='gradientBorder'>As a skilled web developer, I specialize in creating bespoke websites enhanced with 3D elements, making your online presence truly unique.</p>
                         <Link className='link' href="/work">
                             <button className='button'>View Latest Projects</button>
@@ -44,7 +41,7 @@ export default function Home() {
 
                 <section id='services'>
                     <div className='heading'>
-                        <h3>Services</h3>
+                        <h2>Services</h2>
                         <p>From custom landing pages to complex 3D animations, I offer a variety of web development services to meet your needs.</p>
                     </div>
 

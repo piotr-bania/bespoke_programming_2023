@@ -1,0 +1,101 @@
+@import '/styles/globals';
+
+#services {
+    gap: calc(#{$large} * 2);
+
+    .heading {
+        margin: calc($large * 3) 0 0 0;
+    }
+
+    .magenta {
+        margin-top: $small;
+        text-transform: uppercase;
+    }
+}
+
+/* ------------------------------ Desktop ------------------------------ */
+@media screen and (min-width: 1024px) {
+    #services {
+        .heading {
+            grid-area: 1 / 2 / 2 / 7;
+        }
+
+        .bespoke {
+            grid-area: 2 / 5 / 3 / 11;
+        }
+
+        .single {
+            grid-area: 3 / 3 / 4 / 9;
+        }
+
+        .landing {
+            grid-area: 4 / 5 / 5 / 11;
+        }
+
+        .design {
+            grid-area: 5 / 3 / 6 / 9;
+        }
+
+        .maintenance {
+            grid-area: 6 / 5 / 7 / 11;
+        }
+    }
+}
+
+/* ------------------------------ Tablet ------------------------------ */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #services {
+        .heading {
+            grid-area: 1 / 2 / 2 / 6;
+        }
+
+        .bespoke {
+            grid-area: 2 / 4 / 3 / 9;
+        }
+
+        .single {
+            grid-area: 3 / 3 / 4 / 8;
+        }
+
+        .landing {
+            grid-area: 4 / 4 / 5 / 9;
+        }
+
+        .design {
+            grid-area: 5 / 3 / 6 / 8;
+        }
+
+        .maintenance {
+            grid-area: 6 / 4 / 7 / 9;
+        }
+    }
+}
+
+/* ------------------------------ Smartphone ------------------------------ */
+@media screen and (max-width: 767px) {
+    #services {
+        .heading {
+            grid-area: 1 / 1 / 2 / 6;
+        }
+
+        .bespoke { 
+            grid-area: 2 / 1 / 3 / 7;
+        }
+
+        .single {
+            grid-area: 3 / 1 / 4 / 7;
+        }
+
+        .landing {
+            grid-area: 4 / 1 / 5 / 7;
+        }
+
+        .design {
+            grid-area: 5 / 1 / 6 / 7;
+        }
+
+        .maintenance {
+            grid-area: 6 / 1 / 7 / 7;
+        }
+    }
+}
