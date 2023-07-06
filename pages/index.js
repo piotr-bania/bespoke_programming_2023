@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { motion as m } from 'framer-motion'
 import Overlay_1 from '../components/layout/Overlay_1'
 import HeroCanvas from '../components/home/HeroCanvas'
+import IconsCanvas from '../components/icons/IconsCanvas'
 
 export default function Home() {
     return (
@@ -21,7 +22,7 @@ export default function Home() {
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
                 <Overlay_1 />
-                <HeroCanvas />
+                {/* <HeroCanvas /> */}
 
                 <section id='hero'>
                     <div className='heading'>
@@ -46,26 +47,31 @@ export default function Home() {
                     </div>
 
                     <div className='div div_1'>
+                        <IconsCanvas />
                         <h4>Bespoke 3D Website <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Creating immersive web experiences with custom 3D elements tailored to your brand and objectives.</p>
                     </div>
                     
                     <div className='div div_2'>
+                        <IconsCanvas />
                         <h4>Landing Page <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Crafting visually captivating standalone web pages that drive conversions and engage users.</p>
                     </div>
                     
                     <div className='div div_3'>
+                        <IconsCanvas />
                         <h4>Single Page Application <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Building dynamic websites that seamlessly load new content without page reloads, enhancing user experience.</p>
                     </div>
                     
                     <div className='div div_4'>
+                        <IconsCanvas />
                         <h4>Web Development from Your Design <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Translating your unique design into a fully functional and responsive website, coded from scratch.</p>
                     </div>
 
                     <div className='div div_5'>
+                        <IconsCanvas />
                         <h4>Website Maintenance <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Ensuring your website remains up to date, secure, and optimized for peak performance, freeing you to focus on your business.</p>
                     </div>

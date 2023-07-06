@@ -1,16 +1,31 @@
 @import '/styles/globals';
 
+.navbar {
+    display: flex;
+    background: $menu_background_horizontal;
+}
+
 #navbar {
     position: fixed;
     top: 0;
     left: 0;
-    height: 60px;
-    display: flex;
+    width: 100%;
+    margin: 0;
     align-items: center;
     justify-content: space-between;
     z-index: 100;
 
+    .canvas_navbar {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        top: $small;
+        left: $large;
+    }
+
     .menu {
+        position: fixed;
+        right: $large;
         width: $small;
         height: 24px;
         position: relative;
@@ -53,109 +68,80 @@
             }
         }
     }
-}
 
-.menu_container {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background: $menu_background;
-    z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity .75s ease, visibility .75s ease;
-
-    .menu_links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+    .menu_container {
+        position: fixed;
         height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        background: $menu_background;
+        z-index: -1;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .75s ease, visibility .75s ease;
 
-        h2 {
-            color: $light_grey;
-            transition: all 0.3s ease-in-out;
+        .menu_links {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
 
-            &:hover {
-                color: $white;
-                transform: translateX($small);
+            h2 {
+                color: $light_grey;
+                line-height: 0.45;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: $white;
+                    transform: translateX($small);
+                }
+            }
+
+            .link {
+                max-width: 25%;
             }
         }
     }
-}
 
-.menu.open~.menu_container {
-    opacity: 1;
-    visibility: visible;
-}
-
-.canvas_navbar {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    top: $small;
-}
-
-/* ------------------------------ Desktop ------------------------------ */
-@media screen and (min-width: 1024px) {
-    #navbar {
-        width: calc(100% - 2 * $large);
+    .menu.open~.menu_container {
+        opacity: 1;
+        visibility: visible;
     }
 
-    .canvas_navbar {
-        left: $large;
-    }
-
-    .menu_links {
-        h2 {
-            line-height: 0.45;
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .canvas_navbar {
+            left: $medium;
         }
 
-        .link {
-            max-width: 25%;
+        .menu_container {
+            .menu_links {
+                h2 {
+                    line-height: 0.35;
+                }
+
+                .link {
+                    max-width: 40%;
+                }
+            }
         }
     }
-}
 
-/* ------------------------------ Tablet ------------------------------ */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    #navbar {
-        width: calc(100% - 2 * $medium);
-    }
-
-    .canvas_navbar {
-        left: $medium;
-    }
-
-    .menu_links {
-        h2 {
-            line-height: 0.35;
+    @media screen and (max-width: 767px) {
+        .canvas_navbar {
+            left: $small;
         }
 
-        .link {
-            max-width: 65%;
-        }
-    }
-}
+        .menu_container {
+            .menu_links {
+                h2 {
+                    line-height: 0;
+                }
 
-/* ------------------------------ Smartphone ------------------------------ */
-@media screen and (max-width: 767px) {
-    #navbar {
-        width: calc(100% - 2 * $small);
-    }
-
-    .canvas_navbar {
-        left: $small;
-    }
-
-    .menu_links {
-        h2 {
-            line-height: 0;
-        }
-
-        .link {
-            max-width: 85%;
+                .link {
+                    max-width: 50%;
+                }
+            }
         }
     }
 }

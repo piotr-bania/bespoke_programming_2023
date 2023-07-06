@@ -27,7 +27,7 @@ const Navbar = () => {
     }, [router.events])
 
     return (
-        <section id='navbar'>
+        <section id='navbar' className='navbar'>
             <Link href="/">
                 <LogoCanvas />
             </Link>

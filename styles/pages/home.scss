@@ -1,5 +1,13 @@
 @import '/styles/globals';
 
+.canvas_icons {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    z-index: -1;
+}
+
 #hero {
     height: 100vh;
 
