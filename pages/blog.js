@@ -24,6 +24,7 @@ export default function Blog() {
                 <section id='blog'>
                     <Book />
                     <div className='heading'>
+                        <h2>Blog</h2>
                         <h3>Explore Insights and Inspiration from My Blog</h3>
                         <p>Stay Informed and Inspired in the World of Web Development</p>
                     </div>
@@ -46,7 +47,7 @@ export default function Blog() {
                     <div className='div_4 blog'>
                         <h4>Post 4</h4>
                         <p>How to Create a 3D Website</p>
-                    </div>
+                    </div>  
                 </section>
             </m.main>
         </>

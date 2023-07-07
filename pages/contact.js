@@ -2,6 +2,7 @@ import Head from 'next/head'
 import { motion as m } from 'framer-motion'
 import Mailbox from '../components/contact/Mailbox'
 import Overlay_3 from '../components/layout/Overlay_3'
+import ContactForm from '../components/contact/ContactForm'
 
 export default function Blog() {
     return (
@@ -21,13 +22,14 @@ export default function Blog() {
                 >
                 <Overlay_3 />
 
-                <section>
-                    <Mailbox />
-                    <h4>Email:</h4>
-                    <p>Ready to elevate your website with 3D elements? Let's talk! Reach me at <a href="mailto:contact@bespokeprogramming.net">contact@bespokeprogramming.net</a></p>
-                    <h4>Office Hours:</h4>
-                    <p>I'm available from Monday to Friday, 9.00-17.00 GMT, and Saturday to Sunday, 9.00-13.00 GMT.</p>
+                <section id='contact'>
+                    <div className='heading'>
+                        <h2>Request a Quote</h2>
+                        <p>Interested in elevating your online presence with a bespoke 3D website? Let's get started. Provide some details about your project below, and I'll get back to you with a personalized quote.</p>
+                    </div>
                 </section>
+
+                <ContactForm />
             </m.main>
         </>
     )

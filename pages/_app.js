@@ -11,6 +11,7 @@ import '../styles/pages/process.scss'
 import '../styles/pages/work.scss'
 import '../styles/pages/about.scss'
 import '../styles/pages/blog.scss'
+import '../styles/pages/contact.scss'
 
 import { motion as m, AnimatePresence } from 'framer-motion'
 import Layout from '../components/layout/Layout.js'

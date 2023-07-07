@@ -32,21 +32,21 @@ export default function Services() {
 
                     <div className='bespoke'>
                         <BespokeWebsite />
-                        <h4>Bespoke 3D Website Development</h4>
+                        <h4>Bespoke 3D Website</h4>
                         <p className='gradientBorder'>Take your online presence to another dimension with a bespoke 3D website. I use React Three Fiber and Three.js to create engaging 3D elements and animations that will captivate your audience.</p>
                         <p className='magenta'><i>Pricing: Starts at £3000 per project, depending on complexity.</i></p>
                     </div>
 
                     <div className='single'>
                         <SinglePageApp />
-                        <h4>Single Page Application Development</h4>
+                        <h4>Single Page Application</h4>
                         <p className='gradientBorder'>For a seamless user experience, consider a single page application. I develop dynamic web applications that interact with users by dynamically rewriting the current page, delivering a smooth and engaging experience.</p>
                         <p className='magenta'><i>Pricing: Starts at £2000 per application.</i></p>
                     </div>
 
                     <div className='landing'>
                         <Monitor />
-                        <h4>Landing Page Development</h4>
+                        <h4>Landing Page</h4>
                         <p className='gradientBorder'>A compelling landing page can convert visitors into customers. I create standalone landing pages that capture your brand's essence and encourage visitors to take action.</p>
                         <p className='magenta'><i>Pricing: Starts at £800 per page.</i></p>
                     </div>
