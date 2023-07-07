@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
-import Quotation from '../components/quote/Quotation'
 import Overlay_1 from '../components/layout/Overlay_1'
+import Quotation from '../components/quote/Quotation'
 
 export default function Faq() {
     return (
@@ -21,11 +21,14 @@ export default function Faq() {
                 >
                 <Overlay_1 />
 
-                <section>
-                    <Quotation />
-                    <h4>Get a Quote</h4>
-                    <p>Feel free to add as much information as possible. The more you tell me, the more accurate I can be with your quote.</p>
+                <section id='form'>
+                    <div className='heading'>
+                        <h2>Request a Quote</h2>
+                        <p>Interested in elevating your online presence with a bespoke 3D website? Let's get started. Provide some details about your project below, and I'll get back to you with a personalized quote.</p>
+                    </div>
                 </section>
+
+                <Quotation />
             </m.main>
         </>
     )

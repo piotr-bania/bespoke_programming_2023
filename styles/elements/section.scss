@@ -4,14 +4,17 @@ section {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     margin: $small $large;
-    padding: $large 0;
+    padding: calc($large * 2) 0;
     gap: $small;
 
     .heading {
         grid-area: 1 / 2 / 2 / 7;
-        margin: $large 0 0 0;
         text-transform: uppercase;
 
+        h3, h4 {
+            text-transform: capitalize;
+        }
+        
         p {
             color: $white;
         }
