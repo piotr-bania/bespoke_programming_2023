@@ -2,9 +2,9 @@ import React, { Suspense } from 'react'
 import { AnimatePresence, motion as m } from 'framer-motion'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { PerspectiveCamera, Environment, Html, OrbitControls } from '@react-three/drei'
-import Icon_1 from './Icon_1'
+import Icon_Landing from './Icon_Landing'
 
-const IconsCanvas = () => {
+const Canvas_Landing = () => {
     return (
         <AnimatePresence>
             <m.div className='canvas_icons'
@@ -17,7 +17,7 @@ const IconsCanvas = () => {
                         <PerspectiveCamera makeDefault position={[0, 0, 2]} />
                         <ambientLight />
                         <Environment files='./environment/photo_studio_loft_hall_1k.hdr' />
-                        <Icon_1 />
+                        <Icon_Landing />
                     </Suspense>
                 </Canvas>
             </m.div>
@@ -25,4 +25,4 @@ const IconsCanvas = () => {
     )
 }
 
-export default IconsCanvas
+export default Canvas_Landing

@@ -3,7 +3,11 @@ import Link from 'next/link'
 import { motion as m } from 'framer-motion'
 import Overlay_1 from '../components/layout/Overlay_1'
 import HeroCanvas from '../components/home/HeroCanvas'
-import IconsCanvas from '../components/icons/IconsCanvas'
+import Canvas_Bespoke from '../components/icons/Canvas_Bespoke'
+import Canvas_Landing from '../components/icons/Canvas_Landing'
+import Canvas_SPA from '../components/icons/Canvas_SPA'
+import Canvas_Design from '../components/icons/Canvas_Design'
+import Canvas_Maintenance from '../components/icons/Canvas_Maintenance'
 
 export default function Home() {
     return (
@@ -14,7 +18,7 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/svg/logo.svg" />
             </Head>
-  
+
             <m.main
                 initial={{opacity: 0, transition: {duration: 1}}}
                 animate={{opacity: 1, transition: {delay: 1, duration: 1}}}
@@ -47,31 +51,31 @@ export default function Home() {
                     </div>
 
                     <div className='div div_1'>
-                        <IconsCanvas />
+                        <Canvas_Bespoke />
                         <h4>Bespoke 3D Website <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Creating immersive web experiences with custom 3D elements tailored to your brand and objectives.</p>
                     </div>
                     
                     <div className='div div_2'>
-                        <IconsCanvas />
+                        <Canvas_Landing />
                         <h4>Landing Page <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Crafting visually captivating standalone web pages that drive conversions and engage users.</p>
                     </div>
                     
                     <div className='div div_3'>
-                        <IconsCanvas />
+                        <Canvas_SPA />
                         <h4>Single Page Application <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Building dynamic websites that seamlessly load new content without page reloads, enhancing user experience.</p>
                     </div>
                     
                     <div className='div div_4'>
-                        <IconsCanvas />
+                        <Canvas_Design />
                         <h4>Web Development from Your Design <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Translating your unique design into a fully functional and responsive website, coded from scratch.</p>
                     </div>
 
                     <div className='div div_5'>
-                        <IconsCanvas />
+                        <Canvas_Maintenance />
                         <h4>Website Maintenance <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Ensuring your website remains up to date, secure, and optimized for peak performance, freeing you to focus on your business.</p>
                     </div>
