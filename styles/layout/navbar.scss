@@ -2,7 +2,6 @@
 
 .navbar {
     display: flex;
-    background: $menu_background_horizontal;
 }
 
 #navbar {
@@ -77,6 +76,7 @@
         top: 0;
         left: 0;
         background: $menu_background;
+        backdrop-filter: blur(3px) saturate(150%);
         z-index: -1;
         opacity: 0;
         visibility: hidden;

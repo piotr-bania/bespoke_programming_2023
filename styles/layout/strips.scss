@@ -1,14 +1,11 @@
 @import '/styles/globals';
 
-.strip,
-.overlay_1,
-.overlay_2,
-.overlay_3 {
+.strip {
     position: fixed;
     top: 0;
     width: 1px;
     height: 100vh;
-    opacity: 0.25;
+    opacity: 0.35;
     z-index: -1;
 }
 
@@ -16,87 +13,50 @@
     background: linear-gradient(180deg, $white 0%, $background 100%);
 }
 
-.overlay_1,
-.overlay_2,
-.overlay_3 {
-    background: $gradient_overlay;
-}
-
-.overlay_1 {
+.one {
     left: 9.75%;
-    width: 32.25%;
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
-        width: 32.25%;
+        left: calc($small * 0.6);
     }
 
     @media screen and (max-width: 767px) {
         left: calc($small * 0.6);
-        width: calc(33% - $small * 0.6);
     }
 }
 
-.overlay_2 {
-    left: 27.5%;
-}
+.two {
+    left: 42%;
 
-.overlay_3 {
-    left: 50%;
-}
-
-/* ------------------------------ Desktop ------------------------------ */
-@media screen and (min-width: 1024px) {
-    .one {
-        left: 9.75%;
-    }
-    
-    .two {
-        left: 42%;
-    }
-    
-    .three {
-        right: 42%;
-    }
-    
-    .four {
-        right: 9.75%;
-    }
-}
-
-/* ------------------------------ Tablet ------------------------------ */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .one {
-        left: calc($small * 0.6);
-    }
-    
-    .two {
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         left: 33%;
     }
-    
-    .three {
+
+    @media screen and (max-width: 767px) {
+        left: 33%;
+    }
+}
+
+.three {
+    right: 42%;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         right: 33%;
     }
-    
-    .four {
+
+    @media screen and (max-width: 767px) {
+        right: 33%;
+    }
+}
+
+.four {
+    right: 9.75%;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
         right: calc($small * 0.6);
     }
-}
 
-/* ------------------------------ Smartphone ------------------------------ */
-@media screen and (max-width: 767px) {
-    .one {
-        left: calc($small * 0.6);
-    }
-    
-    .two {
-        left: 33%;
-    }
-    
-    .three {
-        right: 33%;
-    }
-    
-    .four {
+    @media screen and (max-width: 767px) {
         right: calc($small * 0.6);
     }
 }

@@ -122,7 +122,7 @@ export default function Home() {
 
                     <div className='div div_3'>
                         <h4>Testing</h4>
-                        <p className='gradientBorder'>I rigorously test all aspects of your website, ensuring op􀆟mal performance and seamless user interaction with 3D elements.</p>
+                        <p className='gradientBorder'>I rigorously test all aspects of your website, ensuring opimal performance and seamless user interaction with 3D elements.</p>
                     </div>
 
                     <div className='div div_4'>
