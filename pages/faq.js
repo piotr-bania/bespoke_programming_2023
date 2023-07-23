@@ -2,7 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { motion as m } from 'framer-motion'
 import Questions from '../components/faq/Questions'
-import Overlay_4 from '../components/layout/Overlay_4'
 
 export default function Faq() {
 
@@ -52,7 +51,6 @@ export default function Faq() {
                 exit={{opacity: 0, transition: {duration: 1}}}
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
-                <Overlay_4 />
 
                 <section id='faq'>
                     <div className='heading'>

@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
-import Overlay_4 from '../components/layout/Overlay_4'
 
 export default function Process() {
     return (
@@ -18,7 +17,6 @@ export default function Process() {
                 exit={{opacity: 0, transition: {duration: 1}}}
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
-                <Overlay_4 />
 
                 <section id='work'>
 

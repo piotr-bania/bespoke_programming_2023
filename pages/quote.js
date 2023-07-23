@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
-import Overlay_1 from '../components/layout/Overlay_1'
 import Quotation from '../components/quote/Quotation'
 
 export default function Faq() {
@@ -19,7 +18,6 @@ export default function Faq() {
                 exit={{opacity: 0, transition: {duration: 1}}}
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
-                <Overlay_1 />
 
                 <section id='form'>
                     <div className='heading'>

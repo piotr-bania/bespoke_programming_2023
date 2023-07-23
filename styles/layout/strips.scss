@@ -1,39 +1,39 @@
 @import '/styles/globals';
 
-// ------------------------------ Strips ------------------------------
-.strip {
-    position: fixed;
-    width: 1px;
-    height: 100vh;
-    background: linear-gradient(180deg, $white 0%, $background 100%);
-    opacity: 0.25;
-    z-index: -1;
-}
-
-.one,
-.two,
-.three,
-.four {
-    top: 0;
-}
-
-// ------------------------------ Overlay ------------------------------
+.strip,
 .overlay_1,
 .overlay_2,
-.overlay_3,
-.overlay_4 {
-    background: $gradient_overlay;
+.overlay_3 {
     position: fixed;
-    height: 100vh;
-    width: 22.5%;
     top: 0;
+    width: 1px;
+    height: 100vh;
     opacity: 0.25;
     z-index: -1;
-    display: none;
+}
+
+.strip {
+    background: linear-gradient(180deg, $white 0%, $background 100%);
+}
+
+.overlay_1,
+.overlay_2,
+.overlay_3 {
+    background: $gradient_overlay;
 }
 
 .overlay_1 {
-    left: 5%;
+    left: 9.75%;
+    width: 32.25%;
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        width: 32.25%;
+    }
+
+    @media screen and (max-width: 767px) {
+        left: calc($small * 0.6);
+        width: calc(33% - $small * 0.6);
+    }
 }
 
 .overlay_2 {
@@ -42,10 +42,6 @@
 
 .overlay_3 {
     left: 50%;
-}
-
-.overlay_4 {
-    left: 72.5%;
 }
 
 /* ------------------------------ Desktop ------------------------------ */

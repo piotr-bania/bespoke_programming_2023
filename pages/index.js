@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
 import { motion as m } from 'framer-motion'
-import Overlay_1 from '../components/layout/Overlay_1'
 import HeroCanvas from '../components/home/HeroCanvas'
 import Canvas_Bespoke from '../components/icons/Canvas_Bespoke'
 import Canvas_Landing from '../components/icons/Canvas_Landing'
@@ -25,7 +24,6 @@ export default function Home() {
                 exit={{opacity: 0, transition: {duration: 1}}}
                 transition={{duration: 1, ease: 'easeOut'}}
                 >
-                <Overlay_1 />
                 <HeroCanvas />
 
                 <section id='hero'>
