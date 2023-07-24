@@ -16,7 +16,7 @@ const Canvas_SPA = () => {
                     <Suspense fallback={null}>
                         <PerspectiveCamera makeDefault position={[0, 0, 2]} />
                         <ambientLight />
-                        <Environment files='./environment/photo_studio_loft_hall_1k.hdr' />
+                        <Environment files='./environment/christmas_photo_studio_06_1k.hdr' />
                         <Icon_SPA />
                     </Suspense>
                 </Canvas>

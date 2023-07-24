@@ -16,15 +16,13 @@ const HeroCanvas = () => {
                 animate={{opacity: 1, transition: {delay: 1, duration: 2}}}
                 exit={{opacity: 0, transition: {duration: 1}}}
                 >
-                <Canvas shadows>
+                <Canvas>
                     <Suspense fallback={null}>
                         {/* <Camera /> */}
-                        <PerspectiveCamera makeDefault position={[-12, 0, 45]} ref={cameraRef} />
-                        {/* <ambientLight intensity={0.15} /> */}
-                        {/* <pointLight position={[-15, 5, 10]} /> */}
-                        <Environment files='./environment/photo_studio_loft_hall_1k.hdr' />
+                        <PerspectiveCamera makeDefault position={[-12, 0, 45]} />
+                        <ambientLight />
+                        <Environment files='./environment/christmas_photo_studio_06_1k.hdr' />
                         <Hero />
-                        {/* <Controls /> */}
                     </Suspense>
                 </Canvas>
             </m.div>

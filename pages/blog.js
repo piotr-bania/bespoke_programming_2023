@@ -19,7 +19,7 @@ export default function Blog() {
                 >
 
                 <section id='blog'>
-                    <Book />
+                    
                     <div className='heading'>
                         <h2>Blog</h2>
                         <h3>Explore Insights and Inspiration from My Blog</h3>
