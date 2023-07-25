@@ -18,11 +18,11 @@ const Logo = ({ opacity, glass }) => {
         () =>
             new THREE.MeshPhysicalMaterial({
                 transmission: 0.25,
-                opacity: 0.9,
+                opacity: 0.95,
                 clearcoat: 1,
-                clearcoatRoughness: 0.1,
-                roughness: 0,
-                metalness: 0,
+                clearcoatRoughness: 0.2,
+                roughness: 0.2,
+                metalness: 0.2,
                 envMapIntensity: 1,
                 transparent: true,
                 depthWrite: false,

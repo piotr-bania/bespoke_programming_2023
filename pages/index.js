@@ -7,6 +7,8 @@ import Canvas_Landing from '../components/icons/Canvas_Landing'
 import Canvas_SPA from '../components/icons/Canvas_SPA'
 import Canvas_Design from '../components/icons/Canvas_Design'
 import Canvas_Maintenance from '../components/icons/Canvas_Maintenance'
+import Featured_Project_Canvas_1 from '../components/work/Featured_Project_Canvas_1'
+import Featured_Project_Canvas_2 from '../components/work/Featured_Project_Canvas_2'
 
 export default function Home() {
     return (
@@ -85,28 +87,30 @@ export default function Home() {
 
                 <section id='work'>
                     <div className='heading'>
-                        <h3>Featured Work</h3>
+                        <h2>Featured Work</h2>
                         <p>Take a look at some of the unique web experiences I've crafted for my clients.</p>
                     </div>
 
                     <div className='div_1 work'>
                         <h4>Featured project 1</h4>
+                        <Featured_Project_Canvas_1 />
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi nostrum, magnam eveniet possimus impedit assumenda eos repellendus provident esse.</p>
                     </div>
 
                     <div className='div_2 work'>
                         <h4>Featured project 2</h4>
+                        <Featured_Project_Canvas_2 />
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum animi nostrum, magnam eveniet possimus impedit assumenda eos repellendus provident esse.</p>
                     </div>
 
                     <Link className='link work_button' href="/work">
-                            <button className='button'>Other Projects</button>
-                        </Link>
+                        <button className='button'>Other Projects</button>
+                    </Link>
                 </section>
 
                 <section id='process'>
                     <div className='heading'>
-                        <h3>My Process</h3>
+                        <h2>My Process</h2>
                         <p>Efficient and transparent web development journey.</p>
                     </div>
 

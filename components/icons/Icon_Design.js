@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
-import { useAnimations, useGLTF } from '@react-three/drei'
+import { Float, useAnimations, useGLTF } from '@react-three/drei'
 import { useLoader, useFrame } from '@react-three/fiber'
 
 const Icon_Design = (props) => {
@@ -8,14 +8,12 @@ const Icon_Design = (props) => {
     const iconRef = useRef()
     const icon = useGLTF('./models/design.gltf')
 
-    useFrame(() => {
-        iconRef.current.rotation.y -= 0.005
-    })
-
     return (
-        <mesh ref={iconRef} scale={5} >
-            <primitive object={icon.scene} />
-        </mesh>
+        <Float distance={0.5} speed={5} factor={0.5} >
+            <mesh ref={iconRef} scale={5} >
+                <primitive object={icon.scene} />
+            </mesh>
+        </Float>
     )
 }
 

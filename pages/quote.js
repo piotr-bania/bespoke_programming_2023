@@ -22,7 +22,8 @@ export default function Faq() {
                 <section id='form'>
                     <div className='heading'>
                         <h2>Request a Quote</h2>
-                        <p>Interested in elevating your online presence with a bespoke 3D website? Let's get started. Provide some details about your project below, and I'll get back to you with a personalized quote.</p>
+                        <h3>Interested in elevating your online presence with a bespoke 3D website?</h3>
+                        <p>Provide some details about your project below, and I'll get back to you with a personalized quote.</p>
                     </div>
                 </section>
 

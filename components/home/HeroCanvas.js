@@ -21,7 +21,7 @@ const HeroCanvas = () => {
                         {/* <Camera /> */}
                         <PerspectiveCamera makeDefault position={[-12, 0, 45]} />
                         <ambientLight />
-                        <Environment files='./environment/christmas_photo_studio_06_1k.hdr' />
+                        <Environment files='./environment/photo_studio_loft_hall_1k.hdr' />
                         <Hero />
                     </Suspense>
                 </Canvas>

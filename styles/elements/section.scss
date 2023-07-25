@@ -14,6 +14,10 @@ section {
         h3, h4 {
             text-transform: capitalize;
         }
+
+        h3 {
+            color: $dark_grey;
+        }
         
         p {
             color: $white;

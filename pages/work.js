@@ -22,7 +22,7 @@ export default function Process() {
 
                     <div className='heading'>
                         <h2>My Portfolio</h2>
-                        <h3>Explore Our Diverse Range of Projects</h3>
+                        <h3>Explore My Diverse Range of Projects</h3>
                         <p>My work showcases commitment to excellence in custom web development. Each project represents my dedication to creating unique, visually captivating, and functional web solutions.</p>
                     </div>
 
