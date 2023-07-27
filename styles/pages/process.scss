@@ -1,10 +1,6 @@
 @import '/styles/globals';
 
 #process {
-    div {
-        margin: $small 0;
-    }
-
     .planning, .build, .testing, .maintenance {
         padding: $small $large;
         margin: 0 $small;

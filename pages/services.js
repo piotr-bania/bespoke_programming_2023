@@ -1,7 +1,4 @@
 import Head from 'next/head'
-import Monitor from '../components/services/Landing'
-import SinglePageApp from '../components/services/Single'
-import BespokeWebsite from '../components/services/Bespoke'
 import { motion as m } from 'framer-motion'
 
 export default function Services() {
@@ -29,38 +26,37 @@ export default function Services() {
                     </div>
 
                     <div className='bespoke'>
-                        <BespokeWebsite />
                         <h4>Bespoke 3D Website</h4>
-                        <p className='gradientBorder'>Take your online presence to another dimension with a bespoke 3D website. I use React Three Fiber and Three.js to create engaging 3D elements and animations that will captivate your audience.</p>
-                        <p className='magenta'><i>Pricing: Starts at £3000 per project, depending on complexity.</i></p>
+                        <p className='gradientBorder'>Elevate your online presence with an exceptional bespoke 3D website. I harness the power of React Three Fiber and Three.js to craft mesmerizing 3D elements and animations that enthrall your audience.</p>
+                        <p className='magenta'><p>Investment:</p> Starting at £3000 per project, subject to project complexity and customization.</p>
                     </div>
 
                     <div className='single'>
-                        <SinglePageApp />
                         <h4>Single Page Application</h4>
-                        <p className='gradientBorder'>For a seamless user experience, consider a single page application. I develop dynamic web applications that interact with users by dynamically rewriting the current page, delivering a smooth and engaging experience.</p>
-                        <p className='magenta'><i>Pricing: Starts at £2000 per application.</i></p>
+                        <p className='gradientBorder'>Seamless user experiences await with a meticulously designed single page application. Through dynamic page rewriting, I deliver fluid interactions that engage users and elevate your online interactions.
+</p>
+                        <p className='magenta'><p>Investment:</p> Starting at £2000 per application, tailored to match the intricacy and sophistication of your application.</p>
                     </div>
 
                     <div className='landing'>
-                        <Monitor />
                         <h4>Landing Page</h4>
-                        <p className='gradientBorder'>A compelling landing page can convert visitors into customers. I create standalone landing pages that capture your brand's essence and encourage visitors to take action.</p>
-                        <p className='magenta'><i>Pricing: Starts at £800 per page.</i></p>
+                        <p className='gradientBorder'>Maximize conversions with a compelling landing page that embodies your brand's essence. My expertise lies in crafting standalone landing pages that inspire action and leave a lasting impression.
+</p>
+                        <p className='magenta'><p>Investment:</p> Starting at £800 per page, ensuring your landing page exudes professionalism and captivates your visitors.</p>
                     </div>
 
                     <div className='design'>
-                        <Monitor />
                         <h4>Web Development from Your Design</h4>
-                        <p className='gradientBorder'>Have a design ready but need someone to bring it to life? I can translate your design into a fully functional, interactive website. I work closely with you to ensure the final product aligns with your vision and goals.</p>
-                        <p className='magenta'><i>Pricing: Starts at £1500 per design.</i></p>
+                        <p className='gradientBorder'>Bring your vision to life with precision and artistry. If you possess a design that speaks to your identity, I transform it into a fully functional, interactive website - a masterpiece that resonates with your audience.
+</p>
+                        <p className='magenta'><p>Investment:</p> Starting at £1500 per design, providing you with a customized web solution that aligns seamlessly with your creative direction.</p>
                     </div>
 
                     <div className='maintenance'>
-                        <Monitor />
                         <h4>Website Maintenance</h4>
-                        <p className='gradientBorder'>Keep your website up-to-date and secure with my maintenance service. I offer regular updates, bug fixes, performance optimization, and more to ensure your website remains in top shape.</p>
-                        <p className='magenta'><i>Pricing: £50 per hour.</i></p>
+                        <p className='gradientBorder'>Ensure your online presence remains at its peak with diligent website maintenance. My commitment lies in delivering regular updates, resolving issues, optimizing performance, and safeguarding your digital investment.
+</p>
+                        <p className='magenta'><p>Investment:</p> £50 per hour, empowering you with peace of mind as I safeguard the continuity and reliability of your website.</p>
                     </div>
                 </section>
             </m.main>

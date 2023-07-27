@@ -13,6 +13,7 @@ import '../styles/pages/about.scss'
 import '../styles/pages/blog.scss'
 import '../styles/pages/quote.scss'
 import '../styles/pages/faq.scss'
+import '../styles/pages/contact.scss'
 
 import { motion as m, AnimatePresence } from 'framer-motion'
 import Layout from '../components/layout/Layout.js'

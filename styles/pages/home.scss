@@ -91,19 +91,15 @@
 
 #services,
 #work,
-#process {
-
+#process {    
     .heading {
-        padding: $large 0;
-
         p {
             color: $dark_grey;
         }
     }
 
     .div {
-        padding: $small $large;
-        margin: 0 $small;
+        padding: $large;
         background: $div_background;
         backdrop-filter: blur(3px) saturate(150%);
         border: 1px solid $background_medium_faded;

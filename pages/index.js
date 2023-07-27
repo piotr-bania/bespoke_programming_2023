@@ -2,11 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { motion as m } from 'framer-motion'
 import HeroCanvas from '../components/home/HeroCanvas'
-import Canvas_Bespoke from '../components/icons/Canvas_Bespoke'
-import Canvas_Landing from '../components/icons/Canvas_Landing'
-import Canvas_SPA from '../components/icons/Canvas_SPA'
-import Canvas_Design from '../components/icons/Canvas_Design'
-import Canvas_Maintenance from '../components/icons/Canvas_Maintenance'
 import Featured_Project_Canvas_1 from '../components/work/Featured_Project_Canvas_1'
 import Featured_Project_Canvas_2 from '../components/work/Featured_Project_Canvas_2'
 
@@ -51,31 +46,26 @@ export default function Home() {
                     </div>
 
                     <div className='div div_1'>
-                        <Canvas_Bespoke />
                         <h4>Bespoke 3D Website <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Creating immersive web experiences with custom 3D elements tailored to your brand and objectives.</p>
                     </div>
                     
                     <div className='div div_2'>
-                        <Canvas_Landing />
                         <h4>Landing Page <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Crafting visually captivating standalone web pages that drive conversions and engage users.</p>
                     </div>
                     
                     <div className='div div_3'>
-                        <Canvas_SPA />
                         <h4>Single Page Application <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Building dynamic websites that seamlessly load new content without page reloads, enhancing user experience.</p>
                     </div>
                     
                     <div className='div div_4'>
-                        <Canvas_Design />
                         <h4>Web Development from Your Design <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Translating your unique design into a fully functional and responsive website, coded from scratch.</p>
                     </div>
 
                     <div className='div div_5'>
-                        <Canvas_Maintenance />
                         <h4>Website Maintenance <abbr className='indigo'>⇀</abbr></h4>
                         <p className='gradientBorder'>Ensuring your website remains up to date, secure, and optimized for peak performance, freeing you to focus on your business.</p>
                     </div>
