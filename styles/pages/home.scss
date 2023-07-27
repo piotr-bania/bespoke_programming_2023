@@ -8,6 +8,15 @@
     z-index: -1;
 }
 
+.project_canvas {
+    width: 100%;
+    height: 50%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 #hero {
     height: 100vh;
 

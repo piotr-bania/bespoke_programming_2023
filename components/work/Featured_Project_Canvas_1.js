@@ -8,13 +8,13 @@ import Featured_Project_1 from './Featured_Project_1'
 const Featured_Project_Canvas = () => {
     return (
         <m.div
-            className='project_canvas_1'
+            className='project_canvas'
             initial={{opacity: 0}}
             animate={{opacity: 1, transition: { delay: 0.1, duration: 2}}}
             >
             <Canvas>
+                <PerspectiveCamera makeDefault position={[0, -0.05, 2.55]} />
                 <Suspense fallback={null}>
-                    <PerspectiveCamera makeDefault position={[0, -0.5, 7]} />
                     <Featured_Project_1 />
                 </Suspense>
             </Canvas>

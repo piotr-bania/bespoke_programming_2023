@@ -25,15 +25,13 @@ extend({WaveMaterial})
 const Featured_Project_1 = () => {
 
     const shaderRef = useRef()
-    const { viewport } = useThree()
 
     const [image] = useLoader(THREE.TextureLoader, ['./images/mara_river.png'])
 
     return (
-        <Float speed={2} floatIntensity={0.5} >
-            <Center>
-                <mesh position={[0, 0, 0]}>
-                    <planeGeometry args={[10, 5, 10, 10]} />
+        <Float speed={5} floatIntensity={0.25} >
+            <mesh position={[0, 0, 0]}>
+                    <planeGeometry args={[3, 2, 1, 1]} />
                     <waveMaterial
                         ref={shaderRef}
                         u_Texture={image}
@@ -41,7 +39,6 @@ const Featured_Project_1 = () => {
                         transparent
                     />
                 </mesh>
-            </Center>
         </Float>
     )
 }
