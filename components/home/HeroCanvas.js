@@ -1,9 +1,8 @@
 import React, { Suspense, useRef } from 'react'
 import { AnimatePresence, motion as m } from 'framer-motion'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { PerspectiveCamera, Environment, PresentationControls } from '@react-three/drei'
+import { PerspectiveCamera, Environment } from '@react-three/drei'
 import Hero from './Hero'
-import Controls from '../controls/Controls'
 
 const HeroCanvas = () => {
 
