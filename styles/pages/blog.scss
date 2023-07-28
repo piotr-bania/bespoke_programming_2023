@@ -4,8 +4,8 @@
     .blog {
         padding: $small $large;
         margin: 0 $small;
-        background: $background_faded;
-        backdrop-filter: blur(4px);
+        backdrop-filter: blur(3px) saturate(150%);
+        border: 1px solid $background_medium_faded;
         border-radius: calc($small * 0.25);
     }
 

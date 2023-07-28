@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { motion as m } from 'framer-motion'
+import Process_1_Canvas from '../components/process/Process_1_Canvas'
 
 export default function Process() {
     return (
@@ -25,10 +26,14 @@ export default function Process() {
                     </div>
 
                     <div className='planning'>
-
+                        <div className='process_canvas'>
+                            <Process_1_Canvas />
+                        </div>
                         <h4>Information Gathering & Planning</h4>
                         <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
                     </div>
+
+
 
                     <div className='build'>
 

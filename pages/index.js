@@ -4,6 +4,7 @@ import { motion as m } from 'framer-motion'
 import HeroCanvas from '../components/home/HeroCanvas'
 import Featured_Project_Canvas_1 from '../components/work/Featured_Project_Canvas_1'
 import Featured_Project_Canvas_2 from '../components/work/Featured_Project_Canvas_2'
+import Process_1_Canvas from '../components/process/Process_1_Canvas'
 
 export default function Home() {
     return (
@@ -113,6 +114,9 @@ export default function Home() {
                     </div>
 
                     <div className='div div_1'>
+                        <div className='process_canvas'>
+                            <Process_1_Canvas />
+                        </div>
                         <h4>Information Gathering & Planning</h4>
                         <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
                     </div>
