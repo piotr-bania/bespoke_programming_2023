@@ -118,7 +118,7 @@ export default function Home() {
 
                     <div className='div div_1'>
                         <div className='process_canvas'>
-                            <Process_1 />
+                            {/* <Process_1 /> */}
                         </div>
                         <h4>Information Gathering & Planning</h4>
                         <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
@@ -126,7 +126,7 @@ export default function Home() {
 
                     <div className='div div_2'>
                         <div className='process_canvas'>
-                            <Process_2 />
+                            {/* <Process_2 /> */}
                         </div>
                         <h4>Build</h4>
                         <p className='gradientBorder'>I design and develop your website, employing the latest 3D technologies for a truly engaging user experience.</p>
@@ -134,7 +134,7 @@ export default function Home() {
 
                     <div className='div div_3'>
                         <div className='process_canvas'>
-                            <Process_3 />
+                            {/* <Process_3 /> */}
                         </div>
                         <h4>Testing</h4>
                         <p className='gradientBorder'>I rigorously test all aspects of your website, ensuring opimal performance and seamless user interaction with 3D elements.</p>
@@ -142,7 +142,7 @@ export default function Home() {
 
                     <div className='div div_4'>
                         <div className='process_canvas'>
-                            <Process_4 />
+                            {/* <Process_4 /> */}
                         </div>
                         <h4>Launch & Maintenance</h4>
                         <p className='gradientBorder'>I unveil your 3D-enhanced website to the world and provide ongoing support to keep it fresh and engaging.</p>
