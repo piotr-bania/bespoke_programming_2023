@@ -25,6 +25,11 @@
         grid-area: 5 / 3 / 6 / 9;
     }
 
+    .quote_button {
+        grid-area: 7 / 1 / 8 / 13;
+        margin: auto;
+    }
+
     @media screen and (min-width: 768px) and (max-width: 1023px) {
         .project_1 {
             grid-area: 2 / 3 / 3 / 8;
@@ -40,6 +45,10 @@
     
         .project_4 {
             grid-area: 5 / 2 / 6 / 7;
+        }
+
+        .quote_button {
+            grid-area: 7 / 1 / 8 / 9;
         }
     }
 
@@ -59,6 +68,10 @@
     
         .project_4 {
             grid-area: 5 / 1 / 6 / 7;
+        }
+
+        .quote_button {
+            grid-area: 6 / 1 / 7 / 7;
         }
     }
 }

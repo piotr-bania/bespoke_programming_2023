@@ -50,7 +50,7 @@ const Navbar = () => {
                     <Link className='link' href="/process"><h2>Process</h2></Link>
                     <Link className='link' href="/work"><h2>Work</h2></Link>
                     <Link className='link' href="/about"><h2>About</h2></Link>
-                    <Link className='link' href="/blog"><h2>Blog</h2></Link>
+                    {/* <Link className='link' href="/blog"><h2>Blog</h2></Link> */}
                     <Link className='link' href="/contact"><h2>Contact</h2></Link>
                     <Link className='link' href="/faq"><h2>FAQ</h2></Link>
                     <Link className='link' href="/quote">

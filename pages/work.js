@@ -58,6 +58,10 @@ export default function Process() {
                         <h4>Project 4</h4>
                         <p>For my personal portfolio website, I showcased my skills in HTML, CSS, Sass, and the integration of 3D elements.</p>
                     </div> */}
+
+                    <Link className='link quote_button' href="/quote">
+                        <button className='button'>Get Free Quote</button>
+                    </Link>
                 </section>
             </m.main>
         </>

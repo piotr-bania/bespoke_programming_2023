@@ -117,9 +117,9 @@ export default function Home() {
                     </div>
 
                     <div className='div div_1'>
-                        <div className='process_canvas'>
+                        {/* <div className='process_canvas'>
                             <Process_1 />
-                        </div>
+                        </div> */}
                         <h4>Information Gathering & Planning</h4>
                         <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
                     </div>

@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { motion as m } from 'framer-motion'
 
 export default function About() {
@@ -41,6 +42,10 @@ export default function About() {
                     <div className='paragraph_4'>
                         <p>With a collaborative mindset, I work closely with my clients to understand their goals and transform their ideas into reality. I believe in building long-lasting partnerships based on trust, transparency, and effective communication. <br /><br /> <abbr className='magenta'>Your success is my success</abbr>, and I am dedicated to helping you achieve your web development objectives.</p>
                     </div>
+
+                    <Link className='link quote_button' href="/quote">
+                        <button className='button'>Get Free Quote</button>
+                    </Link>
                 </section>
             </m.main>
         </>
