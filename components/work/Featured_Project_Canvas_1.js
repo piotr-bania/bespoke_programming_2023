@@ -5,7 +5,7 @@ import { motion as m } from 'framer-motion'
 import Featured_Project_1 from './Featured_Project_1'
 
 
-const Featured_Project_Canvas = () => {
+const Featured_Project_Canvas_1 = () => {
     return (
         <m.div
             className='project_canvas'
@@ -13,7 +13,7 @@ const Featured_Project_Canvas = () => {
             animate={{opacity: 1, transition: { delay: 0.1, duration: 2}}}
             >
             <Canvas>
-                <PerspectiveCamera makeDefault position={[0, -0.05, 2.55]} />
+                <PerspectiveCamera makeDefault position={[0, 0, 3.75]} />
                 <Suspense fallback={null}>
                     <Featured_Project_1 />
                 </Suspense>
@@ -22,4 +22,4 @@ const Featured_Project_Canvas = () => {
     )
 }
 
-export default Featured_Project_Canvas
+export default Featured_Project_Canvas_1

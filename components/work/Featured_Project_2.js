@@ -1,46 +1,36 @@
-import React, { useRef } from 'react'
-import { useLoader, useThree, extend } from '@react-three/fiber'
-import { Center, Float, shaderMaterial } from '@react-three/drei'
+import React from 'react'
+import { useLoader, useFrame } from '@react-three/fiber'
 import * as THREE from 'three'
-import waveVertexShader from '../../shaders/wave_vert.glsl'
-import waveFragmentShader from '../../shaders/wave_frag.glsl'
+import { ShaderMaterial } from 'three'
 
-const WaveMaterial = shaderMaterial(
-    {
-        u_Alpha: 0.9,
-        u_Multiplayer: 10,
-        u_Color_A: new THREE.Color('#FFFFFF'),
-        u_Color_B: new THREE.Color('#000000'),
-        u_Time: 0,
-        u_Frequency: 10,
-        u_Color: new THREE.Color(0.0, 0.0, 0.0),
-        u_Texture: new THREE.Texture(),
-    },
-    waveVertexShader,
-    waveFragmentShader
-)
-
-extend({WaveMaterial})
+import wave_vert  from '../../public/shaders/wave.vert'
+import wave_frag  from '../../public/shaders/wave.frag'
 
 const Featured_Project_1 = () => {
 
-    const shaderRef = useRef()
-    const { viewport } = useThree()
-
     const [image] = useLoader(THREE.TextureLoader, ['./images/pb_folio.png'])
 
+    const waveMaterial = new ShaderMaterial({
+        uniforms: {
+            uTime: { value: 0 },
+            uFrequency: { value: new THREE.Vector2(1.77, 1) },
+            uTransparency: { value: 0.9 },
+            uTexture: { value: image },
+        },
+        vertexShader: wave_vert,
+        fragmentShader: wave_frag,
+        side: 2,
+    })
+
+    useFrame(( state, delta ) => {
+        waveMaterial.uniforms.uTime.value += delta
+    })
+
     return (
-        <Float speed={5} floatIntensity={0.25} >
-            <mesh position={[0, 0, 0]}>
-                    <planeGeometry args={[3, 2, 1, 1]} />
-                    <waveMaterial
-                        ref={shaderRef}
-                        u_Texture={image}
-                        side={THREE.DoubleSide}
-                        transparent
-                    />
-                </mesh>
-        </Float>
+        <mesh position={[0, 0, 0]}>
+            <planeGeometry args={[5, 2.8, 128, 128]} />
+            <shaderMaterial args={[waveMaterial]} />
+        </mesh>
     )
 }
 

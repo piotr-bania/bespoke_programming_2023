@@ -85,7 +85,7 @@ export default function Home() {
                         <p>Take a look at some of the unique web experiences I've crafted for my clients.</p>
                     </div>
 
-                    <div className='div_1 work'>
+                    <div className='div_1'>
                         <h4>Mara River Capital</h4>
                         <Link href="https://mara-river-capital-redesign-v2.vercel.app/" target="_blank">
                             <Featured_Project_Canvas_1 />
@@ -95,7 +95,7 @@ export default function Home() {
                         <p className='gradientBorder'>Website redesign for a Tanzanian hedge fund, where I utilized CSS, Sass, React, Next, GLSL, Three.js, and React Three Fiber to create a captivating 3D experience.</p>
                     </div>
 
-                    <div className='div_2 work'>
+                    <div className='div_2'>
                         <h4>Personal Portfolio</h4>
                         <Link href="https://piotrbania.dev/" target="_blank">
                             <Featured_Project_Canvas_2 />
@@ -117,9 +117,9 @@ export default function Home() {
                     </div>
 
                     <div className='div div_1'>
-                        {/* <div className='process_canvas'>
+                        <div className='process_canvas'>
                             <Process_1 />
-                        </div> */}
+                        </div>
                         <h4>Information Gathering & Planning</h4>
                         <p className='gradientBorder'>I take the time to understand your vision, plan meticulously, and lay the groundwork for your 3D-enhanced website.</p>
                     </div>
