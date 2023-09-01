@@ -1,13 +1,17 @@
 import Head from 'next/head'
 import Link from 'next/link'
-import { motion as m } from 'framer-motion'
+import { motion as m, useScroll, useTransform } from 'framer-motion'
 import HeroCanvas from '../components/home/HeroCanvas'
+
 import Featured_Project_Canvas_1 from '../components/work/Featured_Project_Canvas_1'
 import Featured_Project_Canvas_2 from '../components/work/Featured_Project_Canvas_2'
+
 import Process_1 from '../components/process/Process_1'
 import Process_2 from '../components/process/Process_2'
 import Process_3 from '../components/process/Process_3'
 import Process_4 from '../components/process/Process_4'
+
+import Animations from '../components/Animations'
 
 export default function Home() {
     return (
