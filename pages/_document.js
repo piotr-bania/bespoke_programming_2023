@@ -15,11 +15,11 @@ export default function Document() {
                     `
                     }}
                 />
-                <body>
-                    <Main />
-                    <NextScript />
-                </body>
             </Head>
+            <body>
+                <Main />
+                <NextScript />
+            </body>
         </Html>
     )
 }
